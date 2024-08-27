@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/header/Header";
 import Logo from "../assets/logo.svg";
@@ -13,6 +13,16 @@ import Inst from "../assets/insta.png";
 import LinkedIn from "../assets/linkedin.svg";
 import fLogo from "../assets/fb.png";
 import xLogo from "../assets/x-logo.png";
+import product1 from "../assets/photos/product1.jpg";
+import product2 from "../assets/photos/product2.jpg";
+import product3 from "../assets/photos/product3.jpg";
+import product4 from "../assets/photos/product4.jpg";
+import product5 from "../assets/photos/product5.jpg";
+import product6 from "../assets/photos/product6.jpg";
+import product7 from "../assets/photos/product7.jpg";
+import product8 from "../assets/photos/product8.jpg";
+import product9 from "../assets/photos/product9.jpg";
+import product10 from "../assets/photos/product10.jpg";
 // import dummy from "../assets/dummy-image.png";
 
 // import about1 from "../assets/about/about-1.png";
@@ -20,10 +30,63 @@ import xLogo from "../assets/x-logo.png";
 // import about3 from "../assets/about/about-3.png";
 import MobileHeader from "../components/MobileHeader";
 import ProcessSlider from "../components/ProcessSlider";
-import AboutSlider from "../components/AboutSlider";
+
+const productList = [
+  { name: "Bora Residence", images: product1, hoverImg: product2 },
+  { name: "Jain Residence", images: product2, hoverImg: product3 },
+  { name: "Lowerd Office", images: product3, hoverImg: product4 },
+  { name: "Residence 101", images: product4, hoverImg: product5 },
+  {
+    name: "Whitefield Residence",
+    images: product5,
+    hoverImg: product6,
+  },
+  { name: "Villa One", images: product10, hoverImg: product7 },
+  { name: "Villa 34", images: product9, hoverImg: product8 },
+  { name: "Thard Residence", images: product8, hoverImg: product9 },
+  { name: "Talreja Residence", images: product7, hoverImg: product10 },
+  { name: "EcHouse by the Stream", images: product6, hoverImg: product1 },
+];
+function ProjectCard({ proImg, proText, hoverImg, cls }) {
+  return (
+    <>
+      <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
+        <div className="project-card">
+          <img src={proImg} className="img-fluid normal-img" alt="" />
+          <img src={hoverImg} className="hover-img img-fluid" alt="" />
+          <p className={`project-card-text${cls ? cls : ""}`}>{proText}</p>
+        </div>
+      </Grid>
+    </>
+  );
+}
 
 function AboutPage() {
   const [open, setOpen] = useState(false);
+  const [numberOfitemsShown, setNumberOfItemsToShown] = useState(10);
+  const [cars] = useState(productList);
+  
+  const showMore = () => {
+    if (numberOfitemsShown + 10 <= cars.length) {
+      setNumberOfItemsToShown(numberOfitemsShown + 10);
+    } else {
+      setNumberOfItemsToShown(cars.length);
+    }
+  };
+
+  const itemsToShow = useMemo(() => {
+    return cars
+      .slice(0, numberOfitemsShown)
+      .map((product, index) => (
+        <ProjectCard
+          cls={product?.class}
+          proImg={product?.images}
+          hoverImg={product?.hoverImg}
+          proText={product?.name}
+        />
+      ));
+  }, [cars, numberOfitemsShown]);
+
   function ToggleOpen() {
     setOpen(!open);
   }
@@ -127,6 +190,14 @@ function AboutPage() {
             </div>
             <div className="text-center">
               <div className="about-bottom-img">
+              <Grid
+              container
+              rowSpacing={2}
+              columnSpacing={{ xs: 2, sm: 3, md: 3 }}
+              columns={{ xs: 4, sm: 8, md: 12, lg: 12, xl: 20 }}
+            >
+              {itemsToShow.length ? itemsToShow : "Loading..."}
+            </Grid>
                 {/* <AboutSlider /> */}
                 <Grid
                   container
