@@ -1,5 +1,6 @@
 import React from "react";
-import Office from "../assets/project/office.jpg";
+import Office from "../assets/project/project7.jpg";
+import Office1 from "../assets/project/project6.jpg";
 import Slider from "react-slick";
 
 function OfficeSlider() {
@@ -15,13 +16,16 @@ function OfficeSlider() {
     <>
       <Slider {...settings}>
         <div>
-          <img src={Office} className="img-fluid about-office" alt="process img" />
+          <img src={Office} style={{height: "472px", margin: "auto"}} className="img-fluid" alt="process img" />
         </div>
         <div>
-          <img src={Office} className="img-fluid about-office" alt="process img" />
+          <img src={Office1} className="img-fluid" alt="process img" />
         </div>
         <div>
-          <img src={Office} className="img-fluid about-office" alt="process img" />
+          <img src={Office} style={{height: "472px", margin: "auto"}} className="img-fluid" alt="process img" />
+        </div>
+        <div>
+          <img src={Office1} className="img-fluid" alt="process img" />
         </div>
       </Slider>
     </>

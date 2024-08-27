@@ -1,5 +1,5 @@
 import React from "react";
-import Office from "../assets/project/project6.jpg";
+import Office from "../assets/project/office.jpg";
 import Slider from "react-slick";
 
 function ProcessSlider() {

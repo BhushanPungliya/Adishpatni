@@ -149,12 +149,12 @@
   }
   
   .modal-btn {
-  width: 100px;
-  border: none;
-  height: 36px;
-  border-radius: 0;
-  transition: all 0.3s;
-  cursor: pointer;
+    width: 100px;
+    border: none;
+    height: 36px;
+    border-radius: 0;
+    transition: all 0.3s;
+    cursor: pointer;
   background: transparent;
   font-size: 20px;
   font-weight: 400;
@@ -210,3 +210,6 @@
 }
 
 .close-btn{ font-family: 'Baskervville', serif; background-color: transparent; border: 2px solid #000; padding: 10px 20px; font-size: 16px; font-weight: 400; text-transform: capitalize; }
+
+
+.number-text { font-size: 20px; font-weight: 500; line-height: 26px; font-family: 'Baskervville', serif; letter-spacing: normal;}

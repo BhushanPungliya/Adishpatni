@@ -4,11 +4,11 @@ import Header from "../components/header/Header";
 import Logo from "../assets/logo.svg";
 // import Office from "../assets/project/office.jpg";
 import { Grid } from "@mui/material";
-// import about1 from "../assets/about/01.png";
-// import about2 from "../assets/about/02.png";
-// import about3 from "../assets/about/03.png";
-// import about4 from "../assets/about/04.png";
-// import about5 from "../assets/about/05.png";
+import about1 from "../assets/about/01.png";
+import about2 from "../assets/about/02.png";
+import about3 from "../assets/about/03.png";
+import about4 from "../assets/about/04.png";
+import about5 from "../assets/about/05.png";
 import Inst from "../assets/insta.png";
 import LinkedIn from "../assets/linkedin.svg";
 import fLogo from "../assets/fb.png";
@@ -90,14 +90,12 @@ function AboutPage() {
                   Architecture is a fairytale presented in the language of the
                   tectonic. It is didactic and the fantastic, made real by the
                   theatrical and the phenomenological. It is the theatrical and
-                  the mundane, the sublime and the simple.
+                  the mundane, the sublime and the simple. Architecture has to
+                  address some of the most difficult questions that we face
+                  today, yet can rely on man’s imagination, his past, and course
+                  his penchant for storytelling for guidance and inspiration.
                 </p>
-                <p className="about-text">
-                  Architecture has to address some of the most difficult
-                  questions that we face today, yet can rely on man’s
-                  imagination, his past, and course his penchant for
-                  storytelling for guidance and inspiration.
-                </p>
+
                 <p className="about-text">
                   Design is an attitude that exists in every aspect of our
                   lives. Through the making of architecture, we amalgamate
@@ -129,38 +127,34 @@ function AboutPage() {
             </div>
             <div className="text-center">
               <div className="about-bottom-img">
-                <AboutSlider />
-                {/* <Grid
+                {/* <AboutSlider /> */}
+                <Grid
                   container
                   rowSpacing={{ xs: 0, sm: 0, md: 0 }}
                   columnSpacing={{ xs: 0, sm: 0, md: 0 }}
-                  columns={{ xs: 4, sm: 8, md: 16 }}
+                  columns={{ xs: 4, sm: 8, md: 20 }}
                 >
-                  <Grid item xs={2} sm={1} md={2}>
+                  <Grid item xs={2} sm={1} md={4}>
                     <img src={about1} className="about-img1 img-fluid" alt="" />
+                    <p className="number-text">1</p>
                   </Grid>
-                  <Grid item xs={2} sm={1} md={2}>
+                  <Grid item xs={2} sm={1} md={4}>
                     <img src={about2} className="about-img1 img-fluid" alt="" />
+                    <p className="number-text">2</p>
                   </Grid>
-                  <Grid item xs={2} sm={1} md={2}>
+                  <Grid item xs={2} sm={1} md={4}>
                     <img src={about3} className="about-img1 img-fluid" alt="" />
+                    <p className="number-text">3</p>
                   </Grid>
-                  <Grid item xs={2} sm={1} md={2}>
+                  <Grid item xs={2} sm={1} md={4}>
                     <img src={about4} className="about-img1 img-fluid" alt="" />
+                    <p className="number-text">4</p>
                   </Grid>
-                  <Grid item xs={2} sm={1} md={2}>
+                  <Grid item xs={2} sm={1} md={4}>
                     <img src={about5} className="about-img1 img-fluid" alt="" />
+                    <p className="number-text">5</p>
                   </Grid>
-                  <Grid item xs={2} sm={1} md={2}>
-                    <img src={about3} className="about-img1 img-fluid" alt="" />
-                  </Grid>
-                  <Grid item xs={2} sm={1} md={2}>
-                    <img src={about4} className="about-img1 img-fluid" alt="" />
-                  </Grid>
-                  <Grid item xs={2} sm={1} md={2}>
-                    <img src={about5} className="about-img1 img-fluid" alt="" />
-                  </Grid>
-                </Grid> */}
+                </Grid>
               </div>
             </div>
           </div>
