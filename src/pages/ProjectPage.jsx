@@ -101,7 +101,7 @@ function ProjectPage() {
     window.scrollTo(0, 0);
   }, []);
   const [cars] = useState(productList);
-  const [numberOfitemsShown, setNumberOfItemsToShown] = useState(10);
+  const [numberOfitemsShown, setNumberOfItemsToShown] = useState(12);
 
   const showMore = () => {
     if (numberOfitemsShown + 10 <= cars.length) {
