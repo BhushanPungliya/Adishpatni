@@ -164,7 +164,7 @@ function ProjectPage() {
           <div className="mt-4 project-container">
             <Grid
               container
-              rowSpacing={2}
+              rowSpacing={{ xs: 1, sm: 1, md: 2 }}
               columnSpacing={{ xs: 2, sm: 3, md: 3 }}
               columns={{ xs: 4, sm: 8, md: 12, lg: 12, xl: 20 }}
             >

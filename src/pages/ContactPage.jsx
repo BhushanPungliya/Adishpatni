@@ -91,12 +91,12 @@ function ContactPage() {
           </p>
           <p className="office-text">For Product inquiries please contact -</p>
           <a
-            href="mailto:studio@adishpatni.com"
+            href="mailto:info@adishpatni.com"
             style={{ textDecoration: "none", color: "#000" }}
             rel="noreferrer"
             target="_blank"
           >
-            <p className="office-text">info@adishpatni</p>
+            <p className="office-text">info@adishpatni.com</p>
           </a>
         </div>
       </section>

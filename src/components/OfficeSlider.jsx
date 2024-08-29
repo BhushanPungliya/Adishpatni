@@ -16,9 +16,6 @@ function OfficeSlider() {
     <>
       <Slider {...settings}>
         <div>
-          <img src={Office} style={{margin: "auto"}} className="img-fluid ofc-img" alt="process img" />
-        </div>
-        <div>
           <img src={Office1} className="img-fluid" alt="process img" />
         </div>
         <div>
@@ -26,6 +23,9 @@ function OfficeSlider() {
         </div>
         <div>
           <img src={Office1} className="img-fluid" alt="process img" />
+        </div>
+        <div>
+          <img src={Office} style={{margin: "auto"}} className="img-fluid ofc-img" alt="process img" />
         </div>
       </Slider>
     </>

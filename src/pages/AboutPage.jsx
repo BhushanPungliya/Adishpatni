@@ -22,10 +22,8 @@ import MobileHeader from "../components/MobileHeader";
 import ProcessSlider from "../components/ProcessSlider";
 import AwardSlider from "../components/AwardSlider";
 
-
 function AboutPage() {
   const [open, setOpen] = useState(false);
- 
 
   function ToggleOpen() {
     setOpen(!open);
@@ -130,7 +128,29 @@ function AboutPage() {
             </div>
             <div className="text-center">
               <div className="about-bottom-img">
-                <AwardSlider />
+                <Grid
+                  container
+                  rowSpacing={2}
+                  columnSpacing={{ xs: 2, sm: 3, md: 3 }}
+                  columns={{ xs: 1, sm: 1, md: 2, lg: 2, xl: 2 }}
+                >
+                  <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>
+                    <div>
+                      <h6 className="slide-title">Awards Name</h6>
+                      <p className="slider-text">
+                        The Studio focuses on select project, keeping with the
+                        belief that creative clarity and highest degree of
+                        construction quality are only achieved through close
+                        control and involvement.
+                      </p>
+                    </div>
+                  </Grid>
+                  <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>
+                    <div>
+                      <AwardSlider />
+                    </div>
+                  </Grid>
+                </Grid>
                 <Grid
                   container
                   rowSpacing={{ xs: 0, sm: 0, md: 0 }}

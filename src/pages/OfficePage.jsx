@@ -73,24 +73,6 @@ function OfficePage() {
                 wavelength, and are willing to live in a home than a
                 well-designed house.
               </p>
-              <p className="office-page-text mb-1">
-                {" "}
-                Adish Patni is an award-winning architect and interior designer,
-                with many accolades to his name. With an impressive array of
-                projects such as Pavilion house, Villa one under his belt, and
-                multiple cover articles in Antarya, The Times of India and other
-                such magazines. Adish has Created his own niche in the highly
-                competitive world ofdesign. Named as World's Top 100 young
-                architect by Archiprix Netherlands.
-              </p>
-              <p className="office-page-text">
-                {" "}
-                Adish's work reflects his ability to use an international
-                aesthetic with Indian sensibility. The essence of his work is
-                captured best when he knows his patrons are at the same
-                wavelength, and are willing to live in a home than a
-                well-designed house.
-              </p>
               <h6 className="download-title">Download Profile</h6>
               {/* <div>
                 {images.map((image, i) => (
