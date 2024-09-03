@@ -1,5 +1,5 @@
 import React from "react";
-import Office from "../assets/project/office.jpg";
+// import Office from "../assets/project/office.jpg";
 import Slider from "react-slick";
 
 function ProcessSlider() {
@@ -15,16 +15,16 @@ function ProcessSlider() {
     <>
       <Slider {...settings}>
         <div>
-          <img src="/images/images.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
+          <img src="/images/office.jpeg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
         <div>
-          <img src="/images/images.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
+          <img src="/images/office.jpeg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
         <div>
-          <img src="/images/images.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
+          <img src="/images/office.jpeg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
         <div>
-          <img src="/images/images.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
+          <img src="/images/office.jpeg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
       </Slider>
     </>
