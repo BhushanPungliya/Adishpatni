@@ -5,225 +5,244 @@ import Logo from "../assets/logo.svg";
 import MobileHeader from "../components/MobileHeader";
 import Inst from "../assets/insta.png";
 import LinkedIn from "../assets/linkedin.svg";
-import fLogo from "../assets/fb.png"
-import xLogo from "../assets/x-logo.png"
+import fLogo from "../assets/fb.png";
+import xLogo from "../assets/x-logo.png";
 
 const data = [
   {
-    name: "House by the Stream",
-    location: "Coonoor",
-    gfa: "4150",
-    year: "2019",
+    name: "Jalan Residence",
+    location: "Kolkata",
+    gfa: "18990",
   },
   {
-    name: "Residence 101",
+    name: "Chugh Villa",
     location: "Indore",
-    gfa: "6285",
-    year: "2018",
+    gfa: "8500",
   },
   {
-    name: "Casa Milieu",
-    location: "Coonoor",
-    gfa: "24548",
-    year: "2016",
-  },
-  {
-    name: "Mithi",
+    name: "Lal Residence",
     location: "Bangalore",
-    gfa: "28375",
-    year: "2014–",
+    gfa: "9485",
   },
   {
-    name: "Kochi Residence",
-    location: "Ernakulam",
-    gfa: "28375",
-    year: "2018–",
-  },
-  {
-    name: "Faceted Facade",
-    location: "Bangalore",
-    gfa: "20255",
-    year: "2017",
-  },
-  {
-    name: "Villa 34",
-    location: "Coonoor",
-    gfa: "7240",
-    year: "2015",
-  },
-  {
-    name: "Seagulls",
-    location: "Bangalore",
-    gfa: "5850",
-    year: "2015–",
-  },
-  {
-    name: "Court House",
-    location: "Pune ",
-    gfa: "16540",
-    year: "2015–",
-  },
-  {
-    name: "H-House",
-    location: "Bangalore",
-    gfa: "4720",
-    year: "2015–",
-  },
-  {
-    name: "Honiton House",
-    location: "Coonoor",
-    gfa: "4180",
-    year: "2016–",
-  },
-  {
-    name: "Circle Of Tree",
-    location: "Bangalore",
-    gfa: "2880",
-    year: "2019–",
-  },
-  {
-    name: "Villa 64",
-    location: "Coonoor",
-    gfa: "6975",
-    year: "2015",
-  },
-  {
-    name: "Labour Lines",
-    location: "Coonoor",
-    gfa: "28680",
-    year: "2017",
-  },
-  {
-    name: "Mandiram",
-    location: "Bangalore",
-    gfa: "1548 ",
-    year: "2016",
-  },
-  {
-    name: "JRK Gardenia Homes",
+    name: "AS Clubhouse",
     location: "Indore",
-    gfa: "4 Acres",
-    year: "2017",
+    gfa: "16800",
   },
   {
-    name: "AP Pokharna",
-    location: "Pune",
-    gfa: "2700",
-    year: "2021",
+    name: "Talreja Residence",
+    location: "Bhopal",
+    gfa: "11200",
   },
   {
-    name: "Rathi Residence",
+    name: "Siyal Residence",
     location: "Indore",
-    gfa: "5785",
-    year: "2021",
+    gfa: "7200",
   },
   {
-    name: "Suresh Latha Residence",
-    location: "Bangalore",
-    gfa: "6525",
-    year: "2021",
+    name: "Payal Anand Home",
+    location: "Coonoor",
+    gfa: "8815",
   },
   {
-    name: "Seven by MS Dhoni",
-    location: "Ranchi",
-    gfa: "1725",
-    year: "2017",
-  },
-  {
-    name: "68 Residence",
-    location: "Guwahati",
-    gfa: "8765",
-    year: "2018",
-  },
-  {
-    name: "Thard Residence",
-    location: "Guwahati",
-    gfa: "7230",
-    year: "2021",
-  },
-  {
-    name: "Villa One",
-    location: "Pune",
-    gfa: "8180",
-    year: "2018",
+    name: "Shukla Residence",
+    location: "Bhopal",
+    gfa: "",
   },
   {
     name: "Whitefield Residence",
     location: "Indore",
-    gfa: "11250",
-    year: "2021",
+    gfa: "10800",
   },
   {
-    name: "Louvered SM2",
+    name: "68 Residence",
+    location: "Guwahati",
+    gfa: "12350",
+  },
+  {
+    name: "Mohanty Residence",
     location: "Indore",
-    gfa: "3350",
-    year: "2017",
+    gfa: "9025",
+  },
+  {
+    name: "Thard Residence",
+    location: "Guwahati",
+    gfa: "7700",
+  },
+  {
+    name: "Anantara Homes",
+    location: "Bhopal",
+    gfa: "10 Acres",
+  },
+  {
+    name: "Maloo Residence",
+    location: "Indore",
+    gfa: "16150",
+  },
+  {
+    name: "Saket 320",
+    location: "Indore",
+    gfa: "7140",
+  },
+  {
+    name: "Suresh & Latha",
+    location: "Bangalore",
+    gfa: "6525",
+  },
+  {
+    name: "Pokharna",
+    location: "Ahmednagar",
+    gfa: "5350",
   },
   {
     name: "HM Farmhouse",
     location: "Bhopal",
     gfa: "7150",
-    year: "2020",
   },
   {
-    name: "Lal Residence",
-    location: "Bangalore",
-    gfa: "9380",
-    year: "2022",
-  },
-  {
-    name: "Mohanty' Residence",
+    name: "Mehta Arera",
     location: "Bhopal",
-    gfa: "2220",
-    year: "2021",
+    gfa: "8350",
   },
   {
-    name: "Maloo Residence",
+    name: "Shantiniketan",
     location: "Indore",
-    gfa: "7060",
-    year: "2021",
+    gfa: "8100",
+  },
+  {
+    name: "S Talreja Residence",
+    location: "Bhopal",
+    gfa: "7400",
+  },
+  {
+    name: "Villa One",
+    location: "Pune",
+    gfa: "8258",
   },
   {
     name: "Bora Residence",
     location: "Pune",
-    gfa: "4290",
-    year: "2018",
+    gfa: "7821",
   },
   {
-    name: "Talreja Residence",
-    location: "Bhopal",
-    gfa: "5650",
-    year: "2018",
+    name: "Shah Farmhouse",
+    location: "Amby Valley",
+    gfa: "6200",
   },
   {
-    name: "Anantara Homes",
-    location: "Bhopal",
-    gfa: "9 Acres",
-    year: "2021",
+    name: "Circle Of Tree",
+    location: "Bangalore",
+    gfa: "4720",
   },
   {
-    name: "Bharat Talreja Residence",
-    location: "Bhopal",
-    gfa: "9380",
-    year: " 2023",
+    name: " Kochi Bhima",
+    location: "Ernakulam, Kochi",
+    gfa: "18540",
   },
   {
-    name: "Jalan Residence",
-    location: "Kolkata",
-    gfa: "13880",
-    year: "2022",
-  },
-  {
-    name: "Payal Anand Home ",
+    name: "Villa 34/60",
     location: "Coonoor",
-    gfa: "8250",
-    year: "2022",
+    gfa: "7240",
   },
   {
-    name: "Siyal Residence",
+    name: "Residence 101",
     location: "Indore",
-    gfa: "9670",
-    year: "2023",
+    gfa: "9550",
+  },
+  {
+    name: "Court House",
+    location: "Pune",
+    gfa: "16640",
+  },
+  {
+    name: "Modular Housing",
+    location: "Coonoor",
+    gfa: "4 Acres",
+  },
+  {
+    name: "Casa Milieu",
+    location: "Coonoor",
+    gfa: "24545",
+  },
+  {
+    name: "JRK Gardenia",
+    location: "Indore",
+    gfa: "3.5 Acres",
+  },
+  {
+    name: "Seven By M.S Dhoni",
+    location: "Ranchi",
+    gfa: "2400",
+  },
+  {
+    name: "Morjim Auberge",
+    location: "Goa",
+    gfa: "",
+  },
+  {
+    name: "Louvered SM2",
+    location: "Indore",
+    gfa: "3050",
+  },
+  {
+    name: "Mandiram",
+    location: "Bangalore",
+    gfa: "1700",
+  },
+  {
+    name: "7 RCR Residence",
+    location: "Indore",
+    gfa: "16250",
+  },
+  {
+    name: "Honiton House",
+    location: "Coonoor",
+    gfa: "4180",
+  },
+  {
+    name: "House Humane",
+    location: "Competition",
+    gfa: "6500",
+  },
+  {
+    name: "Vibha Vastuki",
+    location: "Competition",
+    gfa: "28650",
+  },
+  {
+    name: "Kapil Jain Home",
+    location: "Bangalore",
+    gfa: "5200",
+  },
+  {
+    name: "Palrecha Home",
+    location: "Bangalore",
+    gfa: "3100",
+  },
+  {
+    name: "Project Cafe",
+    location: "Goa",
+    gfa: "8000",
+  },
+  {
+    name: "Embassy Eros",
+    location: "Bangalore",
+    gfa: "5600",
+  },
+  {
+    name: "Wagle",
+    location: "Indore",
+    gfa: "18400",
+  },
+  {
+    name: "Faceted Facade",
+    location: "Indore",
+    gfa: "6300",
+  },
+  {
+    name: "Villa 64",
+    location: "Coonoor",
+    gfa: "6500",
   },
 ];
 
@@ -280,7 +299,7 @@ function ListPage() {
             <table className="table-container">
               <thead className="table-thead">
                 <tr>
-                  {["Address", "Location", "GFA-Sq.Ft", "Year"].map((h) => {
+                  {["Address", "Location", "GFA-Sq.Ft"].map((h) => {
                     return <th style={{ width: "50%" }}>{h}</th>;
                   })}
                 </tr>
@@ -292,7 +311,7 @@ function ListPage() {
                       <td style={{ width: "50%" }}>{item?.name}</td>
                       <td style={{ width: "50%" }}>{item?.location}</td>
                       <td style={{ width: "50%" }}>{item?.gfa}</td>
-                      <td style={{ width: "50%" }}>{item?.year}</td>
+                      {/* <td style={{ width: "50%" }}>{item?.year}</td> */}
                     </tr>
                   );
                 })}

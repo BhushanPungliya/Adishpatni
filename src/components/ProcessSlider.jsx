@@ -15,16 +15,16 @@ function ProcessSlider() {
     <>
       <Slider {...settings}>
         <div>
-          <img src={Office} style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
+          <img src="/images/images.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
         <div>
-          <img src={Office} style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
+          <img src="/images/images.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
         <div>
-          <img src={Office} style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
+          <img src="/images/images.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
         <div>
-          <img src={Office} style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
+          <img src="/images/images.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
       </Slider>
     </>

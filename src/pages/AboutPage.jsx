@@ -22,6 +22,32 @@ import MobileHeader from "../components/MobileHeader";
 import ProcessSlider from "../components/ProcessSlider";
 import AwardSlider from "../components/AwardSlider";
 
+const AwerdList = [
+  { name: "Glenn Murcutt Masterclass, Australia " },
+  { name: "iGen Award 2022" },
+  { name: "B.V Doshi BWTIBA Commendation, Ahmedabad" },
+  { name: "IIA - Young Architect Festival Award" },
+  { name: "ACYA Award, Malaysia" },
+  { name: "Indias’s Best Design Award - IBDA 2022" },
+  { name: "CNBC FOAID Architecture Idea Award" },
+  { name: "Aces of Space Design Award" },
+  { name: "IIID - BMRCL Competition" },
+  { name: "NDTV DAA Award" },
+  { name: "Acetech - Design Jury Award" },
+  { name: "Yuva Ratna - Recreation House Award" },
+  { name: "The Daily Beast, New York - Art Feature" },
+  { name: "Sir Peter Cook Certificate, London" },
+  { name: "Design Awards India 2023 AIDEA" },
+  { name: "RV Dimensions 2017" },
+  { name: "IPS The Knowledge Kingdom Award" },
+  { name: "Vigyan Bharti Vibha Vastuki Award " },
+  { name: "Sloped Roof to Mandiram Book" },
+  { name: "ArchiPRIX, Netherlands" },
+  { name: "AICA Artist in Concrete Architecture" },
+  { name: "IBS Washington - Lecture" },
+  { name: "GYLC - Global Young Leaders Conference, Prague" },
+];
+
 function AboutPage() {
   const [open, setOpen] = useState(false);
 
@@ -136,13 +162,13 @@ function AboutPage() {
                 >
                   <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>
                     <div>
-                      <h6 className="slide-title">Awards Name</h6>
-                      <p className="slider-text">
-                        The Studio focuses on select project, keeping with the
-                        belief that creative clarity and highest degree of
-                        construction quality are only achieved through close
-                        control and involvement.
-                      </p>
+                      {AwerdList?.map((e, i) => {
+                        return (
+                          <h6 className="about-text" style={{textAlign: "left"}} key={i}>
+                            {e?.name}
+                          </h6>
+                        );
+                      })}
                     </div>
                   </Grid>
                   <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>

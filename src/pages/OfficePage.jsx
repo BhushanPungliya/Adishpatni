@@ -56,7 +56,6 @@ function OfficePage() {
                 <hr className="m-0" />
               </div>
               <p className="office-page-text mb-1">
-                {" "}
                 Adish Patni is an award-winning architect and interior designer,
                 with many accolades to his name. With an impressive array of
                 projects such as Pavilion house, Villa one under his belt, and
@@ -65,8 +64,9 @@ function OfficePage() {
                 competitive world ofdesign. Named as World's Top 100 young
                 architect by Archiprix Netherlands.
               </p>
+              <br />
+              <br />
               <p className="office-page-text">
-                {" "}
                 Adish's work reflects his ability to use an international
                 aesthetic with Indian sensibility. The essence of his work is
                 captured best when he knows his patrons are at the same
