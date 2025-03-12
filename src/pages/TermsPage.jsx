@@ -10,8 +10,8 @@ import { Grid } from "@mui/material";
 // import about5 from "../assets/about/05.png";
 import Inst from "../assets/insta.png";
 import LinkedIn from "../assets/linkedin.svg";
-import fLogo from "../assets/fb.png"
-import xLogo from "../assets/x-logo.png"
+import fLogo from "../assets/fb.png";
+import xLogo from "../assets/x-logo.png";
 import MobileHeader from "../components/MobileHeader";
 
 function TermsPage() {
@@ -60,41 +60,40 @@ function TermsPage() {
               <Grid item xs={2} sm={4} md={4} xl={4}>
                 <p className="terms-text-title">
                   <strong>
-                    Sebastian Treese Architects <br />
-                    Partnership mbB
+                    Atelier Adish Patni<br></br> art | architecture | interior
                   </strong>
                 </p>
-                <p className="terms-text">office@sebastiantreese.de</p>
+                <p className="terms-text">studio@adishpatni.com</p>
                 <p className="terms-text">
-                  Kurfürstendamm 58 <br />
-                  10707 Berlin
+                  R.R Heights, B.G Road Bangalore 560 076
                 </p>
-                <p className="terms-text">
-                  T + 49 30 69 533 47 0 <br />T + 49 30 69 533 47 0
-                </p>
-                <p className="terms-text">
+                <p className="terms-text">D +91 85508 11105</p>
+                {/* <p className="terms-text">
                   Firm Registration Number: PR 1470 B <br />
                   VAT Number: DE 276341192
-                </p>
+                </p> */}
                 <br />
                 <br />
-                <p className="terms-text">
+                {/* <p className="terms-text">
                   Managing Directors: <br />
                   Sebastian Julien Treese, Dipl. Ing. Architect <br />
                   Chamber of Architects Berlin <br />
                   Member ID: 12532 <br />
-                </p>
+                </p> */}
               </Grid>
               <Grid item xs={2} sm={4} md={4} xl={4}>
-                <p className="terms-text">
+                {/* <p className="terms-text">
                   Executive Assistant: <br />
                   Alina Haspel <br />
-                </p>
+                </p> */}
                 <p className="terms-text">
                   Job Applications: <br />
-                  jobs@sebastiantreese.de <br />
+                  studio@adishpatni.com <br />
                 </p>
                 <p className="terms-text">
+                  For Product inquiries please contact: info@adishpatni.com
+                </p>
+                {/* <p className="terms-text">
                   Professional Regulations Architects Chamber Berlin (Berlin
                   Architects and Building Chamber Act of July 19, 1994)
                 </p>
@@ -111,9 +110,9 @@ function TermsPage() {
                   <br />
                   The operators of the linked pages are solely responsible for
                   their content.
-                </p>
+                </p> */}
               </Grid>
-              <Grid item xs={2} sm={4} md={4} xl={4}>
+              {/* <Grid item xs={2} sm={4} md={4} xl={4}>
                 <p className="terms-text">
                   Photography:
                   <br />
@@ -123,13 +122,13 @@ function TermsPage() {
                   Alina Simmelbauer <br />
                   Matthias Ziegler
                 </p>
-              </Grid>
+              </Grid> */}
             </Grid>
-            <h6 className="terms-title">Privacy notice</h6>
-            <div className="pb-4">
+            {/* <h6 className="terms-title">Privacy notice</h6> */}
+            {/* <div className="pb-4">
               <hr className="m-0" />
-            </div>
-            <Grid
+            </div> */}
+            {/* <Grid
               container
               columnSpacing={{ xs: 2, sm: 5, md: 3 }}
               columns={{ xs: 2, sm: 8, md: 12, xl: 12 }}
@@ -359,7 +358,7 @@ function TermsPage() {
                   Matthias Ziegler
                 </p>
               </Grid>
-            </Grid>
+            </Grid> */}
           </div>
         </div>
       </section>
@@ -415,7 +414,7 @@ function TermsPage() {
               />
             </Link>
           </p>
-          <h4 className="home-text">copyright 2024</h4>
+          <h4 className="home-text">copyright 2025</h4>
           <h4 className="home-text">
             <Link
               to="/terms-privacy"

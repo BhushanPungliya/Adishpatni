@@ -32,9 +32,13 @@ import xLogo from "../assets/x-logo.png";
 import Inst from "../assets/insta.png";
 
 const productList = [
-  { name: "Bora Residence", images: product1, hoverImg: "/images/Chugh_Courtyard.jpg" },
+  {
+    name: "Bora Residence",
+    images: product1,
+    hoverImg: "/images/Chugh_Courtyard.jpg",
+  },
   { name: "Jain Residence", images: product2, hoverImg: product3 },
-  { name: "Lowerd Office", images: product3, hoverImg: product4 },
+  { name: "Louvered SM", images: product3, hoverImg: product4 },
   { name: "Residence 101", images: product4, hoverImg: product5 },
   {
     name: "Whitefield Residence",
@@ -45,7 +49,7 @@ const productList = [
   { name: "Villa 34", images: product9, hoverImg: product8 },
   { name: "Thard Residence", images: product8, hoverImg: product9 },
   { name: "Talreja Residence", images: product7, hoverImg: product10 },
-  { name: "EcHouse by the Stream", images: product6, hoverImg: product1 },
+  { name: "House by the Stream", images: product6, hoverImg: product1 },
   { name: "Casa Milieu", images: product1, hoverImg: product2 },
   { name: "Mithi", images: product2, hoverImg: product3 },
   { name: "Kochi Residence", images: product3, hoverImg: product4 },
@@ -248,7 +252,7 @@ function ProjectPage() {
               />
             </Link>
           </p>
-          <h4 className="home-text">copyright 2023</h4>
+          <h4 className="home-text">copyright 2025</h4>
           <h4 className="home-text">
             <Link
               to="/terms-privacy"

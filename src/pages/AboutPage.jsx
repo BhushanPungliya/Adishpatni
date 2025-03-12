@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/header/Header";
 import Logo from "../assets/logo.svg";
@@ -164,7 +164,11 @@ function AboutPage() {
                     <div>
                       {AwerdList?.map((e, i) => {
                         return (
-                          <h6 className="about-text" style={{textAlign: "left"}} key={i}>
+                          <h6
+                            className="about-text"
+                            style={{ textAlign: "left" }}
+                            key={i}
+                          >
                             {e?.name}
                           </h6>
                         );
@@ -256,7 +260,7 @@ function AboutPage() {
               />
             </Link>
           </p>
-          <h4 className="home-text">copyright 2024</h4>
+          <h4 className="home-text">copyright 2025</h4>
           <h4 className="home-text">
             <Link
               to="/terms-privacy"

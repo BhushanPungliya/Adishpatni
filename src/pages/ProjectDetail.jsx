@@ -80,7 +80,7 @@ function ProjectDetail() {
       <div className="home-content">
         <div className="text-center">
           <h4 className="home-text-title">Atelier Adish Patni</h4>
-          <h4 className="home-text">copyright 2024</h4>
+          <h4 className="home-text">copyright 2025</h4>
           <h4 className="home-text">
             <Link
               to="/terms-privacy"
