@@ -84,7 +84,7 @@ function ProjectDetail() {
           <h4 className="home-text">
             <Link
               to="/terms-privacy"
-              style={{ textDecoration: "none", color: "#000" }}
+              style={{ textDecoration: "none", color: "#000000" }}
             >
               Terms & Privacy
             </Link>
