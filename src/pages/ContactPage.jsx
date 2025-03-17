@@ -89,7 +89,7 @@ function ContactPage() {
               />
             </Link>
           </p>
-          <p className="office-text">For Product inquiries please contact -</p>
+          <p className="office-text">For inquiries please contact -</p>
           <a
             href="mailto:info@adishpatni.com"
             style={{ textDecoration: "none", color: "#000" }}

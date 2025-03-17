@@ -67,7 +67,11 @@ function TermsPage() {
                 <p className="terms-text">
                   R.R Heights, B.G Road Bangalore 560 076
                 </p>
-                <p className="terms-text">D +91 85508 11105</p>
+                <p className="terms-text">
+                  <a href="tel:+918550811105" style={{ textDecoration: "none", color: "inherit" }}>
+                    +91 85508 11105
+                  </a>
+                </p>
                 {/* <p className="terms-text">
                   Firm Registration Number: PR 1470 B <br />
                   VAT Number: DE 276341192
@@ -91,7 +95,7 @@ function TermsPage() {
                   studio@adishpatni.com <br />
                 </p>
                 <p className="terms-text">
-                  For Product inquiries please contact: info@adishpatni.com
+                  For inquiries please contact: info@adishpatni.com
                 </p>
                 {/* <p className="terms-text">
                   Professional Regulations Architects Chamber Berlin (Berlin
@@ -382,7 +386,7 @@ function TermsPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={LinkedIn}
@@ -393,7 +397,7 @@ function TermsPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={xLogo}
@@ -404,7 +408,7 @@ function TermsPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={fLogo}
