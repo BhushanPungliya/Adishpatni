@@ -95,7 +95,8 @@ function TermsPage() {
                   studio@adishpatni.com <br />
                 </p>
                 <p className="terms-text">
-                  For inquiries please contact: info@adishpatni.com
+                  For inquiries please contact: <br></br>
+                  info@adishpatni.com
                 </p>
                 {/* <p className="terms-text">
                   Professional Regulations Architects Chamber Berlin (Berlin
