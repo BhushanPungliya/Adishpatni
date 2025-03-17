@@ -60,8 +60,8 @@ function OfficePage() {
                 with many accolades to his name. With an impressive array of
                 projects such as Pavilion house, Villa one under his belt, and
                 multiple cover articles in Antarya, The Times of India and other
-                such magazines. Adish has Created his own niche in the highly
-                competitive world ofdesign. Named as World's Top 100 young
+                such magazines. Adish has created his own niche in the highly
+                competitive world of design. Named as World's Top 100 young
                 architect by Archiprix Netherlands.
               </p>
               <br />
@@ -210,7 +210,7 @@ function OfficePage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={LinkedIn}
@@ -221,7 +221,7 @@ function OfficePage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={xLogo}
@@ -232,7 +232,7 @@ function OfficePage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={fLogo}
