@@ -81,49 +81,49 @@ const productList = [
   { name: "Siyal Residence", images: product7, hoverImg: product10 },
   { name: "Ecoquartier des Bergères", images: product6, hoverImg: product1 },
 ];
-// function ProjectCard({ proImg, proText, hoverImg, cls }) {
-//   return (
-//     <>
-//       <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
-//         <div className="project-card">
-//           <img src={proImg} className="img-fluid normal-img" alt="" />
-//           <img src={hoverImg} className="hover-img img-fluid" alt="" />
-//           <p className={`project-card-text${cls ? cls : ""}`}>{proText}</p>
-//         </div>
-//       </Grid>
-//     </>
-//   );
-// }
-
 function ProjectCard({ proImg, proText, hoverImg, cls }) {
   return (
-    <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
-      <div className="project-card">
-        <img
-          src={proImg}
-          className="img-fluid normal-img"
-          alt={proText}
-          loading="lazy"
-          srcSet={`${proImg} 1x, ${proImg.replace(
-            ".jpg",
-            ".webp"
-          )} 2x`} // Assuming WebP version exists
-        />
-        <img
-          src={hoverImg}
-          className="hover-img img-fluid"
-          alt={proText}
-          loading="lazy"
-          srcSet={`${hoverImg} 1x, ${hoverImg.replace(
-            ".jpg",
-            ".webp"
-          )} 2x`} // Assuming WebP version exists
-        />
-        <p className={`project-card-text${cls ? cls : ""}`}>{proText}</p>
-      </div>
-    </Grid>
+    <>
+      <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
+        <div className="project-card">
+          <img src={proImg} className="img-fluid normal-img" alt="" />
+          <img src={hoverImg} className="hover-img img-fluid" alt="" />
+          <p className={`project-card-text${cls ? cls : ""}`}>{proText}</p>
+        </div>
+      </Grid>
+    </>
   );
 }
+
+// function ProjectCard({ proImg, proText, hoverImg, cls }) {
+//   return (
+//     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
+//       <div className="project-card">
+//         <img
+//           src={proImg}
+//           className="img-fluid normal-img"
+//           alt={proText}
+//           loading="lazy"
+//           srcSet={`${proImg} 1x, ${proImg.replace(
+//             ".jpg",
+//             ".webp"
+//           )} 2x`} // Assuming WebP version exists
+//         />
+//         <img
+//           src={hoverImg}
+//           className="hover-img img-fluid"
+//           alt={proText}
+//           loading="lazy"
+//           srcSet={`${hoverImg} 1x, ${hoverImg.replace(
+//             ".jpg",
+//             ".webp"
+//           )} 2x`} // Assuming WebP version exists
+//         />
+//         <p className={`project-card-text${cls ? cls : ""}`}>{proText}</p>
+//       </div>
+//     </Grid>
+//   );
+// }
 
 
 function ProjectPage() {
