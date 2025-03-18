@@ -89,7 +89,7 @@ function AboutPage() {
             {/* <img src={Office} className="img-fluid about-office" alt="" /> */}
             <h6 className="about-title">Process</h6>
             <div className="pb-4">
-              <hr className="m-0" />
+              <hr className="m-0" style={{ color: "#fff" }} />
             </div>
             <Grid
               container
@@ -150,7 +150,7 @@ function AboutPage() {
             </Grid>
             <h6 className="about-title">Awards And Features</h6>
             <div className="pb-4">
-              <hr className="m-0" />
+              <hr className="m-0" style={{ color: "#fff" }} />
             </div>
             <div className="text-center">
               <div className="about-bottom-img">
@@ -228,7 +228,7 @@ function AboutPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={LinkedIn}
@@ -239,7 +239,7 @@ function AboutPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={xLogo}
@@ -250,7 +250,7 @@ function AboutPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={fLogo}

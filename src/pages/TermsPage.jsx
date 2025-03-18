@@ -50,7 +50,7 @@ function TermsPage() {
           <div className="about-img">
             <h6 className="terms-title">Legal notice</h6>
             <div className="pb-4">
-              <hr className="m-0" style={{ color: "#000" }} />
+              <hr className="m-0" style={{ color: "#fff" }} />
             </div>
             <Grid
               container

@@ -308,7 +308,7 @@ function ListPage() {
                 {data.map((item, index) => {
                   return (
                     <tr key={index}>
-                      <td style={{ width: "50%" }}>{item?.name}</td>
+                      <td style={{ width: "50%", }}>{item?.name}</td>
                       <td style={{ width: "50%" }}>{item?.location}</td>
                       <td style={{ width: "50%" }}>{item?.gfa}</td>
                       {/* <td style={{ width: "50%" }}>{item?.year}</td> */}
@@ -353,7 +353,7 @@ function ListPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={LinkedIn}
@@ -364,7 +364,7 @@ function ListPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={xLogo}
@@ -375,7 +375,7 @@ function ListPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={fLogo}

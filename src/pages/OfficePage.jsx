@@ -52,8 +52,8 @@ function OfficePage() {
             <Grid item xs={4} sm={6} md={6}>
               <h6 className="office-title mt-3 p-0">Adish Patni</h6>
               <h6 className="office-title-normal m-0 pt-1">Artist Architect</h6>
-              <div className="pb-4">
-                <hr className="m-0" />
+              <div className="pb-4 ">
+                <hr className="m-0" style={{ color: "white" }} />
               </div>
               <p className="office-page-text mb-1">
                 Adish Patni is an award-winning architect and interior designer,

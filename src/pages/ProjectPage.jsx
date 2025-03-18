@@ -161,7 +161,7 @@ function ProjectPage() {
           >
             Gallery
           </Link>
-          -
+          <span style={{ color: "#fff" }}>-</span>
           <Link className="header-item" to="/list">
             List
           </Link>
@@ -179,7 +179,7 @@ function ProjectPage() {
               className="modal-btn"
               style={{
                 width: "200px",
-                color: "#000",
+                color: "#fff",
                 fontSize: "16px",
                 textTransform: "capitalize",
                 marginTop: "30px",
@@ -220,7 +220,7 @@ function ProjectPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={LinkedIn}
@@ -231,7 +231,7 @@ function ProjectPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={xLogo}
@@ -242,7 +242,7 @@ function ProjectPage() {
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              // to="https://www.instagram.com/atelieradishpatni/"
+            // to="https://www.instagram.com/atelieradishpatni/"
             >
               <img
                 src={fLogo}
@@ -279,14 +279,14 @@ function ProjectPage() {
               <div className="text-center">
                 <h5
                   className="modal-title"
-                  style={{ fontSize: "24px" }}
+                  style={{ fontSize: "24px", color: "#fff" }}
                   id="staticBackdropLabel"
                 >
                   Atelier Adish Patni
                 </h5>
                 <h5
                   className="modal-title"
-                  style={{ fontSize: "16px", fontWeight: "500" }}
+                  style={{ fontSize: "16px", fontWeight: "500", color: "#fff" }}
                   id="staticBackdropLabel"
                 >
                   art | architecture | interior
@@ -298,6 +298,7 @@ function ProjectPage() {
                   className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
+                  style={{ filter: "invert(100%)" }}
                 ></button>
               </div>
             </div>

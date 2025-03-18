@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
 
 .hero-page {
-  background-color: #fff;
+  background-color: #000;
   height: 100vh;
 }
 .hero-section {
@@ -53,6 +53,8 @@
   height: 80px;
   width: 80px;
   object-fit: cover;
+  background-color: white; /* Just for testing */
+  border-radius: 100%
 }
 .home-content {
   margin-top: 20px;
@@ -90,7 +92,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background-color: #000;
   z-index: 11;
 }
 .project-card {
@@ -113,7 +115,7 @@
 .project-card-text {
   margin-top: 12px;
   margin-bottom: 8px;
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 28px;
@@ -223,7 +225,7 @@
 }
 
 .office-section {
-  background-color: #f6f7f9;
+  background-color: #000000;
   padding: 20px 0;
   margin-top: 166px;
 }
@@ -234,6 +236,7 @@
   margin: 40px 0 0 0;
   line-height: 20px;
   padding-bottom: 20px;
+  color: #fff;
 }
 .download-title {
   font-size: 16px;
@@ -242,6 +245,7 @@
   margin: 40px 0 0 0;
   line-height: 20px;
   padding-bottom: 20px;
+  color: #fff;
 }
 .office-title-normal {
   font-size: 16px;
@@ -250,6 +254,7 @@
   margin: 40px 0 0 0;
   line-height: 20px;
   padding-bottom: 20px;
+  color: #fff;
 }
 .modal-title {
   font-size: 20px;
@@ -273,7 +278,7 @@
   text-transform: capitalize;
   padding: 6px 20px 6px 6px;
   border: 1px solid #000 !important;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .office-title-small {
   font-size: 16px;
@@ -293,6 +298,7 @@
   font-family: "Baskervville";
   font-weight: 400;
   line-height: 20px;
+  color: #fff;
 }
 .office-telephone {
   font-size: 16px;
@@ -300,6 +306,7 @@
   font-weight: 400;
   line-height: 20px;
   margin: 30px 0;
+  color: #fff;
 }
 .office-link {
   margin: 24px;
@@ -308,12 +315,14 @@
   padding: 14px;
   border-radius: 0 !important;
   min-width: 500px;
+  background-color: #000 !important;
 }
 .modal-header {
   border: none !important;
 }
 .modal-body {
   padding-bottom: 0 !important;
+  color: #fff;
 }
 .modal-footer {
   border: none !important;
@@ -328,12 +337,13 @@
   margin: 40px 0 0 0;
   line-height: 20px;
   padding-bottom: 0px;
+  color: #fff !important;
 }
 
 .header-item {
   margin: 0 15px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 16px;
   font-family: "Baskervville";
   font-weight: 400;
@@ -343,7 +353,7 @@
   background-color: transparent;
   margin: 0 15px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 16px;
   font-family: "Baskervville";
   font-weight: 400;
@@ -351,15 +361,15 @@
 .active {
   margin: 0 15px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 16px;
   font-family: "Baskervville", serif;
   font-weight: 400;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
   padding-bottom: 6px;
 }
 .project-section {
-  background-color: #f6f7f9;
+  background-color: #000000;
   padding: 20px 0;
   margin-top: 166px;
   overflow: hidden;
@@ -385,12 +395,12 @@
     padding-bottom: 40px;
   }
   .project-section {
-    background-color: #f6f7f9;
+    background-color: #000;
     padding: 20px 0;
     margin-top: 100px;
   }
   .office-section {
-    background-color: #f6f7f9;
+    background-color: #000;
     padding: 20px;
     margin-top: 100px;
   }
@@ -403,7 +413,7 @@
 }
 
 .project-detail {
-  background-color: #f6f7f9;
+  background-color: #000000;
   padding: 0 0 20px 0;
   margin-top: 168px;
 }
@@ -460,7 +470,8 @@
 }
 
 .about-section {
-  background-color: #f6f7f9;
+  background-color: #000000;
+  color: #fff !important;
   padding: 40px 0;
   margin-top: 166px;
 }
@@ -481,6 +492,7 @@
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-size: 26px;
+  color: #fff !important;
 }
 .about-text {
   font-size: 16px;
@@ -488,6 +500,7 @@
   line-height: 21px;
   font-family: "Baskervville", serif;
   letter-spacing: normal;
+  color: #fff !important;
 }
 
 .slide-title {
@@ -526,7 +539,7 @@
     filter: grayscale(100%);
   }
   .about-section {
-    background-color: #f6f7f9;
+    background-color: #000000;
     padding: 40px 0;
     margin-top: 105px;
     overflow: hidden;
@@ -549,6 +562,7 @@
   font-family: "Baskervville", serif;
   font-weight: 400;
   margin-bottom: 0px;
+  color: #fff;
 }
 .office-page-title {
   font-size: 16px;
@@ -563,13 +577,14 @@
   width: 100%;
   max-width: 1080px;
   margin: auto;
+  color: #fff;
 }
 .table-thead tr {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  color: #000;
+  color: #fff;
   font-family: "Baskervville", serif;
   font-size: 16px;
   font-style: normal;
@@ -632,7 +647,7 @@
     padding: 10px;
   }
   .list-body {
-    border-top: 1px solid #000;
+    border-top: 1px solid #fff;
     width: 100%;
     padding-top: 10px;
     margin-bottom: 10px;
@@ -837,12 +852,13 @@
 
 .close-btn {
   font-family: "Baskervville", serif;
-  background-color: transparent;
-  border: 2px solid #000;
+  background-color: #000;
+  border: 2px solid #fff;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
+  color: #fff;
 }
 
 .number-text {
