@@ -54,7 +54,7 @@
   width: 80px;
   object-fit: cover;
   background-color: white; /* Just for testing */
-  border-radius: 100%
+  border-radius: 100%;
 }
 .home-content {
   margin-top: 20px;
@@ -721,6 +721,7 @@
   background-repeat: no-repeat;
   top: 0;
   left: 0;
+  filter: invert(1);
 }
 
 .process-slider .slick-prev {
@@ -745,6 +746,7 @@
   top: 0;
   left: 0;
   transform: rotate(180deg);
+  filter: invert(1);
 }
 .process-slider {
   overflow: hidden;
@@ -798,6 +800,7 @@
   background-repeat: no-repeat;
   top: 0;
   left: 0;
+  filter: invert(1);
 }
 
 .office-img .slick-prev {
@@ -822,6 +825,7 @@
   top: 0;
   left: 0;
   transform: rotate(180deg);
+  filter: invert(1);
 }
 
 @media (max-width: 1024px) {
