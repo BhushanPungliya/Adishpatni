@@ -62,12 +62,12 @@ function ListPage() {
     <MainLayout>
       <section className="project-section">
         <div className="text-center">
-          <Link
+          {/* <Link
             className={pathName.pathname === "/works" ? "active" : "header-item"}
             to="/works"
           >
             Gallery
-          </Link>
+          </Link> */}
           <div className="mt-4 project-container">
             <table className="table-container">
               <thead className="table-thead">

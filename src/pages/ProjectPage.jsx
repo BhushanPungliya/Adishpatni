@@ -101,18 +101,18 @@ function ProjectPage() {
     <MainLayout>
       <section className="project-section">
         <div className="text-center">
-          <Link
+          {/* <Link
             className={pathName.pathname === "/works" ? "active" : "header-item"}
             to="/works"
           >
             Gallery
-          </Link>
+          </Link> */}
           <div className="mt-4 project-container">
             {pathName.pathname === "/works" ? (
               <div className="gallery-slider mb-5">
                 <Slider {...sliderSettings}>
                   {sliderImages.map((img, index) => (
-                    <div key={index} style={{ backgroundColor: "#2b2a2a" }}>
+                    <div key={index} style={{ backgroundColor: "#141414" }}>
                       <img
                         src={img}
                         alt={`gallery-${index}`}

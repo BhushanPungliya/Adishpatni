@@ -7,7 +7,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2b2a2a;
+  background-color: #141414;
   padding: 25px 0;
 }
 
@@ -69,7 +69,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2b2a2a;
+    background-color: #141414;
     padding: 25px 0;
   }
 
@@ -84,7 +84,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #2b2a2a;
+    background-color: #141414;
     z-index: 100;
     transition: ease 0.5s;
   }

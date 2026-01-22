@@ -30,7 +30,7 @@ function ProjectDetail() {
         <div className="gallery-slider">
           <Slider {...settings}>
             {images.map((img, index) => (
-              <div key={index} style={{ backgroundColor: "#2b2a2a" }}>
+              <div key={index} style={{ backgroundColor: "#141414" }}>
                 <img
                   src={img}
                   className="img-fluid"

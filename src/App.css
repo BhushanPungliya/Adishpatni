@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
 
 body {
-  background-color: #2b2a2a;
+  background-color: #141414;
   color: #fff;
 }
 
 
 .hero-page {
-  background-color: #2b2a2a;
+  background-color: #141414;
   height: 100vh;
 }
 
@@ -111,7 +111,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #2b2a2a;
+  background-color: #141414;
   z-index: 11;
 }
 
@@ -264,7 +264,7 @@ body {
 
 .office-section {
   min-height: calc(100vh - 260px);
-  background-color: #2b2a2a;
+  background-color: #141414;
   padding: 20px 0;
   margin-top: 166px;
 }
@@ -366,7 +366,7 @@ body {
   padding: 14px;
   border-radius: 0 !important;
   min-width: 500px;
-  background-color: #2b2a2a !important;
+  background-color: #141414 !important;
 }
 
 .modal-header {
@@ -427,7 +427,7 @@ body {
 }
 
 .project-section {
-  background-color: #2b2a2a;
+  background-color: #141414;
   padding: 20px 0;
   margin-top: 166px;
   overflow: hidden;
@@ -455,13 +455,13 @@ body {
   }
 
   .project-section {
-    background-color: #2b2a2a;
+    background-color: #141414;
     padding: 20px 0;
     margin-top: 100px;
   }
 
   .office-section {
-    background-color: #2b2a2a;
+    background-color: #141414;
     padding: 20px;
     margin-top: 100px;
   }
@@ -475,7 +475,7 @@ body {
 }
 
 .project-detail {
-  background-color: #2b2a2a;
+  background-color: #141414;
   padding: 0 0 20px 0;
   margin-top: 168px;
 }
@@ -539,7 +539,7 @@ body {
 }
 
 .about-section {
-  background-color: #2b2a2a;
+  background-color: #141414;
   color: #fff !important;
   padding: 40px 0;
   margin-top: 166px;
@@ -618,7 +618,7 @@ body {
   }
 
   .about-section {
-    background-color: #2b2a2a;
+    background-color: #141414;
     padding: 40px 0;
     margin-top: 105px;
     overflow: hidden;
@@ -964,7 +964,7 @@ body {
 
 .close-btn {
   font-family: "Baskervville", serif;
-  background-color: #2b2a2a;
+  background-color: #141414;
   border: 2px solid #fff;
   padding: 10px 20px;
   font-size: 16px;
