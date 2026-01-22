@@ -1,14 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
 
+body {
+  background-color: #2b2a2a;
+  color: #fff;
+}
+
+
 .hero-page {
-  background-color: #000;
+  background-color: #2b2a2a;
   height: 100vh;
 }
+
 .hero-section {
   position: relative;
   overflow: hidden;
   z-index: 10;
 }
+
 .hero-section video {
   height: 100vh;
   width: 100%;
@@ -17,6 +25,7 @@
   background-repeat: no-repeat;
   object-fit: cover;
 }
+
 .hero-section .header {
   position: absolute;
   left: 50%;
@@ -25,18 +34,21 @@
   z-index: 1;
   width: 100%;
 }
+
 .hero-title {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .hero-title h1 {
   text-align: center;
   padding: 10px 20px;
   border-radius: 6px;
   text-transform: uppercase;
 }
+
 .hero-title .hero-text {
   text-align: center;
   padding: 10px 20px;
@@ -53,16 +65,20 @@
   height: 80px;
   width: 80px;
   object-fit: cover;
-  background-color: white; /* Just for testing */
+  background-color: white;
+  /* Just for testing */
   border-radius: 100%;
 }
+
 .home-content {
   margin-top: 20px;
 }
+
 .project-container {
   margin: auto;
   max-width: 1480px;
 }
+
 .home-content .home-text {
   font-size: 10px;
   font-family: "Baskervville", serif;
@@ -71,6 +87,7 @@
   line-height: 18px;
   text-transform: capitalize;
 }
+
 .home-content .home-footer-text {
   font-size: 12px;
   font-family: "Baskervville", serif;
@@ -79,6 +96,7 @@
   line-height: 18px;
   text-transform: capitalize;
 }
+
 .home-content .home-text-title {
   font-size: 16px;
   font-family: "Baskervville", serif;
@@ -87,31 +105,37 @@
   line-height: 18px;
   text-transform: capitalize;
 }
+
 .contact-section {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #000;
+  background-color: #2b2a2a;
   z-index: 11;
 }
+
 .project-card {
   position: relative;
   overflow: hidden;
   display: block;
   transition: all 0.6s;
 }
+
 .project-card:hover .normal-img {
   display: none;
   transition: all 0.6s;
 }
+
 .project-card .hover-img {
   display: none;
   transition: all 0.6s;
 }
+
 .project-card:hover .hover-img {
   display: block;
 }
+
 .project-card-text {
   margin-top: 12px;
   margin-bottom: 8px;
@@ -122,6 +146,7 @@
   font-family: "Baskervville", serif;
   transition: ease 0.5s;
 }
+
 /* .project-card-text { position: absolute; display: none; bottom: 0; left: 0; right: 0; top: 0;  margin-top: 12px; margin-bottom: 8px; color: #FFFFFF; font-size: 16px; font-weight: 500; line-height: 28px; font-family: 'Baskervville', serif;transition: ease 0.5s; margin: 0;} */
 /* .project-card:hover .project-card-text { position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background-color: #00000032; cursor: pointer; display: flex; align-items: center; justify-content: center;} */
 .project-card img {
@@ -131,12 +156,15 @@
   width: 100%;
   object-fit: cover;
 }
+
 .project-card img:hover {
   filter: grayscale(0%);
 }
+
 .project-card a {
   text-decoration: none;
 }
+
 /* .project-card-text1 { position: absolute;  bottom: 0; left: 0; right: 105%; top: 0;  margin-top: 12px; margin-bottom: 8px; color: #FFFFFF; font-size: 16px; font-weight: 500; line-height: 28px; font-family: 'Baskervville', serif;transition: ease 0.5s; margin: 0;}
 .project-card:hover .project-card-text1 { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #00000032; cursor: pointer; display: flex; align-items: center; justify-content: center;}
 
@@ -154,6 +182,7 @@
     margin: auto;
     max-width: 1080px;
   }
+
   .project-card img {
     filter: grayscale(100%);
     transition: all 0.5s;
@@ -162,6 +191,7 @@
     object-fit: cover;
   }
 }
+
 @media (max-width: 1024px) {
   .project-container {
     margin: auto 20px;
@@ -170,6 +200,7 @@
     padding: 0 78px;
     overflow: hidden;
   }
+
   .project-card img {
     filter: grayscale(100%);
     transition: all 0.5s;
@@ -178,12 +209,14 @@
     object-fit: cover;
   }
 }
+
 @media (max-width: 768px) {
   .project-container {
     margin: 0 20px;
     max-width: 700px;
     padding: 0;
   }
+
   .project-card img {
     filter: grayscale(100%);
     transition: all 0.5s;
@@ -192,6 +225,7 @@
     object-fit: cover;
   }
 }
+
 .ofc-img {
   height: 472px;
 }
@@ -201,20 +235,24 @@
     height: auto;
     object-fit: cover;
   }
+
   .hero-section video {
     height: 100vh;
     width: 100%;
   }
+
   .project-container {
     margin: 0;
     padding: 0 16px;
     overflow: hidden;
   }
+
   .header-title-logo {
     width: auto;
     max-width: 100%;
     max-height: 50px;
   }
+
   .project-card img {
     filter: grayscale(100%);
     transition: all 0.5s;
@@ -225,10 +263,12 @@
 }
 
 .office-section {
-  background-color: #000000;
+  min-height: calc(100vh - 260px);
+  background-color: #2b2a2a;
   padding: 20px 0;
   margin-top: 166px;
 }
+
 .office-title {
   font-size: 16px;
   font-family: "Baskervville";
@@ -238,6 +278,7 @@
   padding-bottom: 20px;
   color: #fff;
 }
+
 .download-title {
   font-size: 16px;
   font-family: "Baskervville";
@@ -247,6 +288,7 @@
   padding-bottom: 20px;
   color: #fff;
 }
+
 .office-title-normal {
   font-size: 16px;
   font-family: "Baskervville";
@@ -256,12 +298,14 @@
   padding-bottom: 20px;
   color: #fff;
 }
+
 .modal-title {
   font-size: 20px;
   font-family: "Baskervville";
   font-weight: 500;
   line-height: 20px;
 }
+
 .modal-text {
   font-size: 16px;
   font-family: "Baskervville";
@@ -269,6 +313,7 @@
   line-height: 20px;
   margin-bottom: 2px;
 }
+
 .modal-input {
   font-size: 14px;
   outline: none;
@@ -280,6 +325,7 @@
   border: 1px solid #000 !important;
   background-color: #fff;
 }
+
 .office-title-small {
   font-size: 16px;
   font-family: "Baskervville";
@@ -287,12 +333,14 @@
   margin: 8px 0 24px 0;
   line-height: 20px;
 }
+
 .office-text-title {
   font-size: 16px;
   font-family: "Baskervville";
   font-weight: 600;
   line-height: 20px;
 }
+
 .office-text {
   font-size: 16px;
   font-family: "Baskervville";
@@ -300,6 +348,7 @@
   line-height: 20px;
   color: #fff;
 }
+
 .office-telephone {
   font-size: 16px;
   font-family: "Baskervville";
@@ -308,28 +357,34 @@
   margin: 30px 0;
   color: #fff;
 }
+
 .office-link {
   margin: 24px;
 }
+
 .modal-content {
   padding: 14px;
   border-radius: 0 !important;
   min-width: 500px;
-  background-color: #000 !important;
+  background-color: #2b2a2a !important;
 }
+
 .modal-header {
   border: none !important;
 }
+
 .modal-body {
   padding-bottom: 0 !important;
   color: #fff;
 }
+
 .modal-footer {
   border: none !important;
   padding-top: 0 !important;
   justify-content: flex-start !important;
   margin-top: 20px;
 }
+
 .contact-title {
   font-size: 16px;
   font-family: "Baskervville";
@@ -348,6 +403,7 @@
   font-family: "Baskervville";
   font-weight: 400;
 }
+
 .download-btn {
   border: none;
   background-color: transparent;
@@ -358,6 +414,7 @@
   font-family: "Baskervville";
   font-weight: 400;
 }
+
 .active {
   margin: 0 15px;
   text-decoration: none;
@@ -368,12 +425,14 @@
   border-bottom: 1px solid #fff;
   padding-bottom: 6px;
 }
+
 .project-section {
-  background-color: #000000;
+  background-color: #2b2a2a;
   padding: 20px 0;
   margin-top: 166px;
   overflow: hidden;
 }
+
 .office-img {
   padding-top: 80px;
   overflow: hidden;
@@ -394,16 +453,19 @@
     padding-top: 20px;
     padding-bottom: 40px;
   }
+
   .project-section {
-    background-color: #000;
+    background-color: #2b2a2a;
     padding: 20px 0;
     margin-top: 100px;
   }
+
   .office-section {
-    background-color: #000;
+    background-color: #2b2a2a;
     padding: 20px;
     margin-top: 100px;
   }
+
   .modal-content {
     padding: 14px;
     border-radius: 0 !important;
@@ -413,10 +475,11 @@
 }
 
 .project-detail {
-  background-color: #000000;
+  background-color: #2b2a2a;
   padding: 0 0 20px 0;
   margin-top: 168px;
 }
+
 .project-detail img {
   height: 434px;
   background-position: center;
@@ -424,18 +487,21 @@
   background-size: cover;
   width: 100%;
 }
+
 .detail-title {
   font-size: 1.4rem;
   margin-bottom: 10px;
   font-family: "Baskervville", serif;
   text-align: right;
 }
+
 .detail-sub-title {
   font-size: 1rem;
   margin-bottom: 10px;
   font-family: "Baskervville", serif;
   text-align: right;
 }
+
 .detail-sub-text {
   font-size: 16px;
   font-family: "Baskervville", serif;
@@ -448,6 +514,7 @@
   .project-detail {
     margin-top: 105px;
   }
+
   .project-detail img {
     height: 634px;
     background-position: center;
@@ -455,12 +522,14 @@
     background-size: cover;
     width: 100%;
   }
+
   .detail-title {
     font-size: 1.4rem;
     margin-bottom: 10px;
     font-family: "Baskervville", serif;
     text-align: center;
   }
+
   .detail-sub-title {
     font-size: 1rem;
     margin-bottom: 10px;
@@ -470,15 +539,17 @@
 }
 
 .about-section {
-  background-color: #000000;
+  background-color: #2b2a2a;
   color: #fff !important;
   padding: 40px 0;
   margin-top: 166px;
 }
+
 .about-section .about-img {
   max-width: 1080px;
   margin: auto;
 }
+
 .about-section .about-office {
   width: auto;
   height: 350px;
@@ -486,6 +557,7 @@
   background-size: cover;
   object-fit: cover;
 }
+
 .about-title {
   margin: 0;
   padding: 17px 17px 17px 0;
@@ -494,6 +566,7 @@
   font-size: 26px;
   color: #fff !important;
 }
+
 .about-text {
   font-size: 16px;
   font-weight: 300;
@@ -511,6 +584,7 @@
   font-weight: 400;
   font-size: 26px;
 }
+
 .slider-text {
   font-size: 16px;
   text-align: left;
@@ -519,14 +593,17 @@
   font-family: "Baskervville", serif;
   letter-spacing: normal;
 }
+
 .about-img1 {
   height: 195px !important;
   width: 155px;
   background-position: center;
   object-fit: cover;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
+
 /* .about-bottom-img { max-width: 600px; margin: auto;} */
 
 @media (max-width: 480px) {
@@ -535,15 +612,18 @@
     width: auto;
     background-position: center;
     object-fit: cover;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
   }
+
   .about-section {
-    background-color: #000000;
+    background-color: #2b2a2a;
     padding: 40px 0;
     margin-top: 105px;
     overflow: hidden;
   }
+
   .about-section .about-office {
     width: 100%;
     margin: auto;
@@ -556,6 +636,7 @@
   max-width: 1080px;
   margin: auto;
 }
+
 /* .office-title { margin: 0; padding: 17px 17px 17px 0; font-family: 'Baskervville', serif; font-weight: 500; font-size: 20px;} */
 .office-page-text {
   font-size: 16px;
@@ -564,6 +645,7 @@
   margin-bottom: 0px;
   color: #fff;
 }
+
 .office-page-title {
   font-size: 16px;
   font-family: "Baskervville", serif;
@@ -579,6 +661,7 @@
   margin: auto;
   color: #fff;
 }
+
 .table-thead tr {
   display: flex;
   justify-content: space-around;
@@ -594,6 +677,7 @@
   margin-bottom: 16px;
   position: relative;
 }
+
 .table-thead tr::after {
   position: absolute;
   content: "";
@@ -603,9 +687,11 @@
   left: 0;
   bottom: 0;
 }
+
 .table-thead tr th {
   text-align: left;
 }
+
 .table-tbody tr {
   display: flex;
   justify-content: space-around;
@@ -620,6 +706,7 @@
   line-height: normal;
   position: relative;
 }
+
 .table-tbody tr::after {
   position: absolute;
   content: "";
@@ -629,9 +716,11 @@
   left: 0;
   bottom: 0;
 }
+
 .table-tbody tr td {
   text-align: left;
 }
+
 .mobile-list-table {
   display: none;
 }
@@ -640,18 +729,21 @@
   .table-container {
     display: none;
   }
+
   .mobile-list-table {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 10px;
   }
+
   .list-body {
     border-top: 1px solid #fff;
     width: 100%;
     padding-top: 10px;
     margin-bottom: 10px;
   }
+
   .mobile-table-text {
     text-align: left;
     width: 100%;
@@ -684,11 +776,13 @@
   font-weight: 500;
   font-size: 22px;
 }
+
 .terms-text-title {
   font-family: "Baskervville", serif;
   font-weight: 700;
   font-size: 15px;
 }
+
 .terms-text {
   font-family: "Baskervville", serif;
   font-weight: 300;
@@ -701,6 +795,7 @@
   padding-bottom: 50px;
   position: relative;
 }
+
 .process-slider .slick-next {
   z-index: 10;
   top: unset !important;
@@ -709,6 +804,7 @@
   height: 30px;
   width: 30px;
 }
+
 .process-slider .slick-next:before {
   content: "";
   background-image: url("./assets/right-arrow.svg");
@@ -733,6 +829,7 @@
   width: 30px;
   right: 5%;
 }
+
 .process-slider .slick-prev:before {
   content: "";
   background-image: url("./assets/right-arrow.svg");
@@ -748,6 +845,7 @@
   transform: rotate(180deg);
   filter: invert(1);
 }
+
 .process-slider {
   overflow: hidden;
   padding-bottom: 50px;
@@ -758,6 +856,7 @@
   .process-slider .slick-next {
     right: 0%;
   }
+
   .process-slider .slick-prev {
     right: 4%;
   }
@@ -767,14 +866,17 @@
   .process-slider .slick-next {
     right: 00%;
   }
+
   .process-slider .slick-prev {
     right: 6%;
   }
 }
+
 @media (max-width: 480px) {
   .process-slider .slick-next {
     right: 0%;
   }
+
   .process-slider .slick-prev {
     right: 9%;
   }
@@ -788,6 +890,7 @@
   height: 30px;
   width: 30px;
 }
+
 .office-img .slick-next:before {
   content: "";
   background-image: url("./assets/right-arrow.svg");
@@ -812,6 +915,7 @@
   height: 30px;
   width: 30px;
 }
+
 .office-img .slick-prev:before {
   content: "";
   background-image: url("./assets/right-arrow.svg");
@@ -832,6 +936,7 @@
   .office-img .slick-next {
     right: 0%;
   }
+
   .office-img .slick-prev {
     right: 8%;
   }
@@ -841,14 +946,17 @@
   .office-img .slick-next {
     right: 00%;
   }
+
   .office-img .slick-prev {
     right: 10%;
   }
 }
+
 @media (max-width: 480px) {
   .office-img .slick-next {
     right: 0%;
   }
+
   .office-img .slick-prev {
     right: 10%;
   }
@@ -856,7 +964,7 @@
 
 .close-btn {
   font-family: "Baskervville", serif;
-  background-color: #000;
+  background-color: #2b2a2a;
   border: 2px solid #fff;
   padding: 10px 20px;
   font-size: 16px;
@@ -871,4 +979,40 @@
   line-height: 26px;
   font-family: "Baskervville", serif;
   letter-spacing: normal;
+}
+
+/* Gallery Slider Dots */
+.gallery-slider .slick-dots {
+  bottom: 20px;
+}
+
+.gallery-slider .slick-dots li button:before {
+  color: #fff !important;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.gallery-slider .slick-dots li.slick-active button:before {
+  color: #fff !important;
+  opacity: 1;
+}
+
+.gallery-slider .slick-prev,
+.gallery-slider .slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.gallery-slider .slick-prev {
+  left: 20px;
+}
+
+.gallery-slider .slick-next {
+  right: 20px;
+}
+
+.gallery-slider .slick-prev:before,
+.gallery-slider .slick-next:before {
+  font-size: 30px;
 }

@@ -1,7 +1,8 @@
 import React from "react";
-import Office from "../assets/project/project7.jpg";
-import Office1 from "../assets/project/project6.jpg";
 import Slider from "react-slick";
+import Office1 from "../assets/office/adishpatni.jpg";
+import Office2 from "../assets/office/adishpatni2.jpg";
+import Office3 from "../assets/office/adishpatni3.jpg";
 
 function OfficeSlider() {
   const settings = {
@@ -11,22 +12,25 @@ function OfficeSlider() {
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
+
+  const officeImages = [Office1, Office2, Office3];
+
   return (
     <>
       <Slider {...settings}>
-        <div>
-          <img src={Office1} className="img-fluid" alt="process img" />
-        </div>
-        <div>
-          <img src={Office} style={{margin: "auto"}} className="img-fluid ofc-img" alt="process img" />
-        </div>
-        <div>
-          <img src={Office1} className="img-fluid" alt="process img" />
-        </div>
-        <div>
-          <img src={Office} style={{margin: "auto"}} className="img-fluid ofc-img" alt="process img" />
-        </div>
+        {officeImages.map((img, index) => (
+          <div key={index}>
+            <img
+              src={img}
+              className="img-fluid"
+              alt={`Office ${index + 1}`}
+              style={{ width: "100%", height: "500px", objectFit: "cover" }}
+            />
+          </div>
+        ))}
       </Slider>
     </>
   );

@@ -3,7 +3,7 @@ import "./header.css";
 import { Link, useLocation } from "react-router-dom";
 
 function Header() {
-    const pathName = useLocation();
+  const pathName = useLocation();
   return (
     <>
       <header>
@@ -12,7 +12,7 @@ function Header() {
         <Link className={pathName.pathname === "/office" ? "active" : "header-item"} to="/office">Office</Link>
         <Link className={pathName.pathname === "/contact" ? "active" : "header-item"} to="/contact">Contact</Link>
       </header>
-      
+
     </>
   );
 }

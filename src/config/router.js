@@ -1,17 +1,18 @@
 import { createHashRouter } from "react-router-dom";
 import App from "../App";
-import ContactPage from "../pages/ContactPage";
-import ProjectPage from "../pages/ProjectPage";
-// import ProjectDetail from "../pages/ProjectDetail";
-import AboutPage from "../pages/AboutPage";
-import OfficePage from "../pages/OfficePage";
-import ListPage from "../pages/ListPage";
-import TermsPage from "../pages/TermsPage";
+import ContactPage from "../pages/ContactPage.jsx";
+import ProjectPage from "../pages/ProjectPage.jsx";
+import ProjectDetail from "../pages/ProjectDetail.jsx";
+import AboutPage from "../pages/AboutPage.jsx";
+import OfficePage from "../pages/OfficePage.jsx";
+import ListPage from "../pages/ListPage.jsx";
+import TermsPage from "../pages/TermsPage.jsx";
+import HomePage from "../pages/HomePage.jsx";
 
 const router = createHashRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomePage />,
   },
   {
     path: "/contact",
@@ -21,10 +22,10 @@ const router = createHashRouter([
     path: "/works",
     element: <ProjectPage />,
   },
-  // {
-  //   path: "/project/project-detail",
-  //   element: <ProjectDetail />,
-  // },
+  {
+    path: "/project/project-detail",
+    element: <ProjectDetail />,
+  },
   {
     path: "/process",
     element: <AboutPage />,

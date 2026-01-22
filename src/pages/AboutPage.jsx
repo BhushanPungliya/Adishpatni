@@ -21,6 +21,7 @@ import xLogo from "../assets/x-logo.png";
 import MobileHeader from "../components/MobileHeader";
 import ProcessSlider from "../components/ProcessSlider";
 import AwardSlider from "../components/AwardSlider";
+import MainLayout from "../components/MainLayout";
 
 const AwerdList = [
   { name: "Glenn Murcutt Masterclass, Australia " },
@@ -49,37 +50,12 @@ const AwerdList = [
 ];
 
 function AboutPage() {
-  const [open, setOpen] = useState(false);
-
-  function ToggleOpen() {
-    setOpen(!open);
-  }
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
-    <>
-      <MobileHeader open={open} />
-      <section className="contact-section">
-        <div className="header">
-          <div className="left-item-hide"></div>
-          <div className="text-center">
-            <Link to="/works">
-              {/* <div className="header-title-logo"></div> */}
-              <img src={Logo} className="header-title-logo" alt="" />
-            </Link>
-            <Header />
-          </div>
-          <div className="bras-btn">
-            <input type="checkbox" id="checkbox" onClick={ToggleOpen} />
-            <label htmlFor="checkbox" className="toggle">
-              <div className="bars" id="bar1"></div>
-              <div className="bars" id="bar2"></div>
-              <div className="bars" id="bar3"></div>
-            </label>
-          </div>
-        </div>
-      </section>
+    <MainLayout>
       <section className="about-section">
         <div className="container">
           <div className="about-img">
@@ -208,70 +184,7 @@ function AboutPage() {
           </div>
         </div>
       </section>
-      <div className="home-content">
-        <div className="text-center">
-          <h4 className="home-footer-text">Atelier Adish Patni</h4>
-          <p
-            className="my-2 d-flex align-items-center justify-content-center"
-            style={{ gap: "12px" }}
-          >
-            <Link
-              style={{ textDecoration: "none" }}
-              to="https://www.instagram.com/atelieradishpatni/"
-            >
-              <img
-                src={Inst}
-                style={{ height: "26px" }}
-                className="img-fluid"
-                alt=""
-              />
-            </Link>
-            <Link
-              style={{ textDecoration: "none" }}
-            // to="https://www.instagram.com/atelieradishpatni/"
-            >
-              <img
-                src={LinkedIn}
-                style={{ height: "30px" }}
-                className="img-fluid"
-                alt=""
-              />
-            </Link>
-            <Link
-              style={{ textDecoration: "none" }}
-            // to="https://www.instagram.com/atelieradishpatni/"
-            >
-              <img
-                src={xLogo}
-                style={{ height: "26px" }}
-                className="img-fluid"
-                alt=""
-              />
-            </Link>
-            <Link
-              style={{ textDecoration: "none" }}
-            // to="https://www.instagram.com/atelieradishpatni/"
-            >
-              <img
-                src={fLogo}
-                style={{ height: "26px" }}
-                className="img-fluid"
-                alt=""
-              />
-            </Link>
-          </p>
-          <h4 className="home-text">copyright 2025</h4>
-          <h4 className="home-text">
-            <Link
-              to="/terms-privacy"
-              style={{ textDecoration: "none", color: "#000" }}
-            >
-              Terms & Privacy
-            </Link>
-          </h4>
-        </div>
-      </div>
-    </>
+    </MainLayout>
   );
 }
 
