@@ -6,7 +6,6 @@ import AboutPage from "../pages/AboutPage.jsx";
 import OfficePage from "../pages/OfficePage.jsx";
 import ListPage from "../pages/ListPage.jsx";
 import TermsPage from "../pages/TermsPage.jsx";
-import HomePage from "../pages/HomePage.jsx";
 
 const router = createHashRouter([
   {
