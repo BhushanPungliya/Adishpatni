@@ -596,6 +596,7 @@ body {
 }
 
 .about-img1 {
+  display: none;
   height: 195px !important;
   width: 155px;
   background-position: center;
@@ -603,12 +604,13 @@ body {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-}
+} 
 
 /* .about-bottom-img { max-width: 600px; margin: auto;} */
 
 @media (max-width: 480px) {
   .about-img1 {
+    display: none;
     height: auto !important;
     width: auto;
     background-position: center;

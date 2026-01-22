@@ -17,11 +17,11 @@ function ContactPage() {
           <p className="office-text">
             <a
               style={{ textDecoration: "none", color: "#fff" }}
-              href="https://www.google.com/maps/dir//Atelier+Adish+Patni+-+Art+%7C+Architecture+%7C+Interiors,+12,+R.R+Heights+NS+Palya,+B.G+Road,+Bengaluru,+Karnataka+560076/@12.911657,77.598352,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae154a11c6e615:0xf300fae9f286a399!2m2!1d77.6004938!2d12.9116559"
+              href="https://www.google.com/maps/search/?api=1&query=72%20Saket%20Nagar%20Indore%20452018"
               target="_blank"
               rel="noreferrer"
             >
-              R.R Heights, B.G Road <br /> Bangalore 560 076
+              72, Saket Nagar <br /> Indore Madhya Pradesh 452 018
             </a>
           </p>
           <p className="office-telephone">

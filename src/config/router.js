@@ -11,7 +11,7 @@ import HomePage from "../pages/HomePage.jsx";
 const router = createHashRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <ProjectPage />,
   },
   {
     path: "/contact",

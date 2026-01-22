@@ -56,7 +56,7 @@ function Footer() {
                         />
                     </Link>
                 </p>
-                <h4 className="home-text">copyright 2025</h4>
+                <h4 className="home-text">copyright 2026</h4>
                 <h4 className="home-text">
                     <Link
                         to="/terms-privacy"
