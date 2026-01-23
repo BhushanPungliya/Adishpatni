@@ -1,5 +1,4 @@
 import { createHashRouter } from "react-router-dom";
-import App from "../App";
 import ContactPage from "../pages/ContactPage.jsx";
 import ProjectPage from "../pages/ProjectPage.jsx";
 import ProjectDetail from "../pages/ProjectDetail.jsx";

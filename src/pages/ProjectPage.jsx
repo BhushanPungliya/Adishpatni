@@ -1,5 +1,5 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Grid } from "@mui/material";
 import product1 from "../assets/photos/product1.jpg";
 import product2 from "../assets/photos/product2.jpg";

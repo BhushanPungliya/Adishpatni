@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import MainLayout from "../components/MainLayout";
 
 const data = [
@@ -54,6 +54,7 @@ const data = [
 
 function ListPage() {
   const pathName = useLocation();
+  console.log(pathName)
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Item1 from "../assets/project/product-detail.jpg";
 import Item2 from "../assets/project/project1.jpg";
