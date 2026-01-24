@@ -21,26 +21,22 @@ function OfficePage() {
               <h6 className="office-title mt-3 p-0">Adish Patni</h6>
               <h6 className="office-title-normal m-0 pt-1">Artist Architect</h6>
               <div className="pb-4 ">
-                <hr className="m-0" style={{ color: "white" }} />
+                <hr className="m-0" style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.1)" }} />
               </div>
               <p className="office-page-text mb-1">
-                Adish Patni is an award-winning architect and interior designer,
-                with many accolades to his name. With an impressive array of
-                projects such as Pavilion house, Villa one under his belt, and
-                multiple cover articles in Antarya, The Times of India and other
-                such magazines. Adish has created his own niche in the highly
-                competitive world of design. Named as World's Top 100 young
-                architect by Archiprix Netherlands.
+                <strong>Adish Patni</strong>
+                <br />
+                Adish Patni is an acclaimed architect and interior designer in Bangalore and Indore, leading his boutique practice under the name Atelier Adish Patni, celebrated for his innovative approach that harmoniously blends international aesthetics with Indian sensibilities.
               </p>
-              <br />
-              <br />
+
               <p className="office-page-text">
-                Adish's work reflects his ability to use an international
-                aesthetic with Indian sensibility. The essence of his work is
-                captured best when he knows his patrons are at the same
-                wavelength, and are willing to live in a home than a
-                well-designed house.
+                Recognized globally, Adish was named among the World's Top 100 Young Architects by Archiprix Netherlands and has been featured in India's Top 50 Architects by iGen. Adish has collaborated with architectural luminaries such as the late B.V. Doshi in Ahmedabad, Sir Peter Cook in London, and Sir Glenn Murcutt in Australia.
               </p>
+
+              <p className="office-page-text">
+                His portfolio displays an impressive array of projects like the Art House, Pavilion House, and Villa101, which have garnered attention in esteemed publications.
+              </p>
+
               <h6 className="download-title">Download Profile</h6>
             </Grid>
 
