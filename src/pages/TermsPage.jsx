@@ -14,7 +14,7 @@ function TermsPage() {
                     <div className="about-img">
                         <h6 className="terms-title">Legal notice</h6>
                         <div className="pb-4">
-                            <hr className="m-0" style={{ color: "#fff" }} />
+                            <hr className="m-0" style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.1)" }} />
                         </div>
                         <Grid
                             container

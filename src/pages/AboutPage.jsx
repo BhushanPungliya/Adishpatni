@@ -62,7 +62,7 @@ function AboutPage() {
             {/* <img src={Office} className="img-fluid about-office" alt="" /> */}
             <h6 className="about-title">Process</h6>
             <div className="pb-4">
-              <hr className="m-0" style={{ color: "#fff" }} />
+              <hr className="m-0" style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.1)" }} />
             </div>
             <Grid
               container
@@ -123,7 +123,7 @@ function AboutPage() {
             </Grid>
             <h6 className="about-title">Awards And Features</h6>
             <div className="pb-4">
-              <hr className="m-0" style={{ color: "#fff" }} />
+              <hr className="m-0" style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.1)" }} />
             </div>
             <div className="text-center">
               <div className="about-bottom-img">

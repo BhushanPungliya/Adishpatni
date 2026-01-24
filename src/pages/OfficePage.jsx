@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import OfficeSlider from "../components/OfficeSlider";
 import MainLayout from "../components/MainLayout";
+import ProfilePDF from "../assets/profile/Adish Patni Profile 2025.pdf";
 
 function OfficePage() {
   useEffect(() => {
@@ -37,7 +38,9 @@ function OfficePage() {
                 His portfolio displays an impressive array of projects like the Art House, Pavilion House, and Villa101, which have garnered attention in esteemed publications.
               </p>
 
-              <h6 className="download-title">Download Profile</h6>
+              <a href={ProfilePDF} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                <h6 className="download-title">Download Profile</h6>
+              </a>
             </Grid>
 
             <Grid item xs={4} sm={6} md={6}>
