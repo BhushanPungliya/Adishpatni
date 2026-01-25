@@ -153,7 +153,7 @@ body {
 .project-card img {
   filter: grayscale(100%);
   transition: all 0.5s;
-  height: 394px;
+  height: 500px;
   width: 100%;
   object-fit: cover;
 }
@@ -187,7 +187,7 @@ body {
   .project-card img {
     filter: grayscale(100%);
     transition: all 0.5s;
-    height: 499px;
+    height: 600px;
     width: 333px;
     object-fit: cover;
   }
@@ -205,7 +205,7 @@ body {
   .project-card img {
     filter: grayscale(100%);
     transition: all 0.5s;
-    height: 413px;
+    height: 520px;
     width: 100%;
     object-fit: cover;
   }
@@ -221,7 +221,7 @@ body {
   .project-card img {
     filter: grayscale(100%);
     transition: all 0.5s;
-    height: 526px;
+    height: 650px;
     width: 100%;
     object-fit: cover;
   }
@@ -257,7 +257,7 @@ body {
   .project-card img {
     filter: grayscale(100%);
     transition: all 0.5s;
-    height: 306px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
   }
@@ -393,7 +393,7 @@ body {
   margin: 40px 0 0 0;
   line-height: 20px;
   padding-bottom: 0px;
-  color: #fff !important;
+  color: #f4f1f1 !important;
 }
 
 .header-item {
@@ -1018,4 +1018,16 @@ body {
 .gallery-slider .slick-prev:before,
 .gallery-slider .slick-next:before {
   font-size: 30px;
+}
+
+.gallery-slider,
+.gallery-slider .slick-list,
+.gallery-slider .slick-track,
+.gallery-slider .slick-slide {
+  border: none !important;
+}
+
+.gallery-slider img {
+  border: none;
+  outline: none;
 }

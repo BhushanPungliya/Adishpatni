@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Inst from "../assets/insta.png";
-import LinkedIn from "../assets/linkedin.svg";
-import fLogo from "../assets/fb.png";
-import xLogo from "../assets/x-logo.png";
+// import LinkedIn from "../assets/linkedin.svg";
+// import fLogo from "../assets/fb.png";
+// import xLogo from "../assets/x-logo.png";
 
 function Footer() {
     return (
@@ -25,7 +25,7 @@ function Footer() {
                             alt=""
                         />
                     </Link>
-                    <Link
+                    {/* <Link
                         style={{ textDecoration: "none" }}
                     >
                         <img
@@ -54,7 +54,7 @@ function Footer() {
                             className="img-fluid"
                             alt=""
                         />
-                    </Link>
+                    </Link> */}
                 </p>
                 <h4 className="home-text">copyright 2026</h4>
                 <h4 className="home-text">

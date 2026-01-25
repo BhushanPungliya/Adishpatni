@@ -15,8 +15,6 @@ import home1 from "../assets/home/home.jpg";
 import home2 from "../assets/home/home2.jpg";
 import home3 from "../assets/home/home3.jpg";
 import home4 from "../assets/home/home4.jpg";
-import home5 from "../assets/home/home5.jpg";
-import home6 from "../assets/home/home6.jpg";
 import Slider from "react-slick";
 import MainLayout from "../components/MainLayout";
 
@@ -47,8 +45,20 @@ function ProjectCard({ proImg, proText, hoverImg, cls }) {
   return (
     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
       <div className="project-card">
-        <img src={proImg} className="img-fluid normal-img" alt={proText} />
-        <img src={hoverImg} className="hover-img img-fluid" alt={proText} />
+        <img
+          src={proImg}
+          className="img-fluid normal-img"
+          alt={proText}
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          src={hoverImg}
+          className="hover-img img-fluid"
+          alt={proText}
+          loading="lazy"
+          decoding="async"
+        />
         <p className={`project-card-text${cls ? cls : ""}`}>{proText}</p>
       </div>
     </Grid>
@@ -93,9 +103,10 @@ function ProjectPage() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: false,
   };
 
-  const sliderImages = [home1, home2, home3, home4, home5, home6];
+  const sliderImages = [home1, home2, home3, home4];
 
   return (
     <MainLayout>
@@ -117,7 +128,9 @@ function ProjectPage() {
                         src={img}
                         alt={`gallery-${index}`}
                         className="img-fluid"
-                        style={{ width: "100%", height: "80vh", objectFit: "contain" }}
+                        style={{ width: "100%", height: "100vh", objectFit: "contain" }}
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   ))}
