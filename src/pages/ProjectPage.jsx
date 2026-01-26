@@ -127,8 +127,7 @@ function ProjectPage() {
                       <img
                         src={img}
                         alt={`gallery-${index}`}
-                        className="img-fluid"
-                        style={{ width: "100%", height: "100vh", objectFit: "contain" }}
+                        className="img-fluid gallery-slider-img"
                         loading="lazy"
                         decoding="async"
                       />

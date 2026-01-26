@@ -9,9 +9,6 @@ function MobileHeader({ open }) {
         style={{ display: open ? "block" : "none" }}
       >
         <div className="mobile-list">
-          <Link className={"header-item"} to="/works">
-            Works
-          </Link>
           <Link className={"header-item"} to="/process">
             Process
           </Link>
