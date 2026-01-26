@@ -25,15 +25,16 @@ function OfficePage() {
                 <hr className="m-0" style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.1)" }} />
               </div>
               <p className="office-page-text mb-1">
-                <strong>Adish Patni</strong>
                 <br />
                 Adish Patni is an acclaimed architect and interior designer in Bangalore and Indore, leading his boutique practice under the name Atelier Adish Patni, celebrated for his innovative approach that harmoniously blends international aesthetics with Indian sensibilities.
               </p>
+              <br />
 
               <p className="office-page-text">
                 Recognized globally, Adish was named among the World's Top 100 Young Architects by Archiprix Netherlands and has been featured in India's Top 50 Architects by iGen. Adish has collaborated with architectural luminaries such as the late B.V. Doshi in Ahmedabad, Sir Peter Cook in London, and Sir Glenn Murcutt in Australia.
               </p>
-
+             <br />
+             
               <p className="office-page-text">
                 His portfolio displays an impressive array of projects like the Art House, Pavilion House, and Villa101, which have garnered attention in esteemed publications.
               </p>

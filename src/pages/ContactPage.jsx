@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import MainLayout from "../components/MainLayout";
+import Logo from "../assets/home/adishpatnilogo.png";
 
 function ContactPage() {
   useEffect(() => {
@@ -10,10 +11,21 @@ function ContactPage() {
     <MainLayout>
       <section className="office-section">
         <div className="text-center">
-          <h1 className="contact-title">Atelier Adish Patni</h1>
+          {/* <h1 className="contact-title">Atelier Adish Patni</h1>
           <h6 className="contact-title mt-0 mb-3" style={{ fontWeight: '400', fontSize: "14px" }}>
             art | architecture | interior
-          </h6>
+          </h6> */}
+
+          <img 
+          src={Logo} 
+          alt="ATELIER ADISH PATNI"
+          height="100px"
+          width="300px"
+          style={{ 
+            mixBlendMode: 'screen',
+            filter: 'brightness(1.2)'
+          }}
+          />
 
           <p className="office-text">
             <a
@@ -22,7 +34,7 @@ function ContactPage() {
               target="_blank"
               rel="noreferrer"
             >
-              R.R Heights, B.G Road <br /> Bangalore 560 076
+              12, R.R Heights <br /> B.G Road, Bangalore
             </a>
           </p>
             <div
@@ -40,7 +52,7 @@ function ContactPage() {
               target="_blank"
               rel="noreferrer"
             >
-              72, Saket Nagar <br /> Indore 452 018
+              72, Saket Nagar <br /> Club Road, Indore
             </a>
           </p>
           

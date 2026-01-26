@@ -271,9 +271,9 @@ body {
 }
 
 .office-title {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Baskervville";
-  font-weight: 400;
+  font-weight: 600;
   margin: 40px 0 0 0;
   line-height: 20px;
   padding-bottom: 20px;
@@ -283,7 +283,7 @@ body {
 .download-title {
   font-size: 16px;
   font-family: "Baskervville";
-  font-weight: 400;
+  font-weight: 600;
   margin: 40px 0 0 0;
   line-height: 20px;
   padding-bottom: 20px;
@@ -291,9 +291,9 @@ body {
 }
 
 .office-title-normal {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Baskervville";
-  font-weight: 400;
+  font-weight: 600;
   margin: 40px 0 0 0;
   line-height: 20px;
   padding-bottom: 20px;
