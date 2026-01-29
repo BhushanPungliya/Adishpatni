@@ -36,7 +36,7 @@ function OfficePage() {
              <br />
              
               <p className="office-page-text">
-                His portfolio displays an impressive array of projects like the Art House, Pavilion House, and Villa101, which have garnered attention in esteemed publications.
+                His portfolio displays an impressive array of projects like the Art House, Pavilion House, and Villa 101, which have garnered attention in esteemed publications.
               </p>
 
               <a href={ProfilePDF} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
