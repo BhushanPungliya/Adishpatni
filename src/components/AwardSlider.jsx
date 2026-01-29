@@ -11,7 +11,7 @@ function AwardSlider() {
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 3000,
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
   };

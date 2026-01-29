@@ -149,7 +149,7 @@ function AboutPage() {
                     </div>
                   </Grid>
                   <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>
-                    <div>
+                    <div className="about-slider">
                       <AwardSlider />
                     </div>
                   </Grid>

@@ -121,20 +121,27 @@ function ProjectPage() {
           <div className="mt-4 project-container">
             {pathName.pathname === "/works" ? (
               <div className="gallery-slider mb-5">
-                <Slider {...sliderSettings}>
-                  {sliderImages.map((img, index) => (
-                    <div key={index} style={{ backgroundColor: "#141414" }}>
-                      <img
-                        src={img}
-                        alt={`gallery-${index}`}
-                        className="img-fluid gallery-slider-img"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                  ))}
-                </Slider>
-              </div>
+  <Slider {...sliderSettings}>
+    {sliderImages.map((img, index) => (
+      <div key={index} style={{ backgroundColor: "#141414" }}>
+        <img
+          src={img}
+          alt={`gallery-${index}`}
+          className="img-fluid gallery-slider-img"
+          loading="lazy"
+          decoding="async"
+          // --- Yahan changes kiye hain ---
+          style={{ 
+            width: "auto", 
+            margin: "0 auto",
+            height: "70vh",     // Height set ki 90vh
+            objectFit: "cover"  // Image stretch nahi hogi, proper crop hokar fit hogi
+          }}
+        />
+      </div>
+    ))}
+  </Slider>
+</div>
             ) : (
               <Grid
                 container
@@ -176,6 +183,81 @@ function ProjectPage() {
           </div>
         </div>
       </section>
+       <div
+        className="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabIndex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <div>&nbsp;</div>
+              <div className="text-center">
+                <h5
+                  className="modal-title"
+                  style={{ fontSize: "24px", color: "#FFFFFF" }}
+                  id="staticBackdropLabel"
+                >
+                  Atelier Adish Patni
+                </h5>
+                <h5
+                  className="modal-title"
+                  style={{ fontSize: "16px", color: "#FFFFFF" , fontWeight: "500" }}
+                  id="staticBackdropLabel"
+                >
+                  art | architecture | interior
+                </h5>
+              </div>
+              <div>
+                <button
+  type="button"
+  className="btn-close btn-close-white" // Yahan change kiya hai
+  data-bs-dismiss="modal"
+  aria-label="Close"
+></button>
+              </div>
+            </div>
+            <div className="modal-body">
+              <div className="row">
+                <div className="col-12">
+                  <p className="modal-text">First Name</p>
+                  <input type="text" className="w-100 modal-input" />
+                </div>
+                <div className="col-12 mt-3">
+                  <p className="modal-text">Email Address</p>
+                  <input type="text" className="w-100 modal-input" />
+                </div>
+                <div className="col-12 mt-3">
+                  <p className="modal-text">Contact Number</p>
+                  <input type="text" className="w-100 modal-input" />
+                </div>
+                <div className="col-12 mt-3">
+                  <p className="modal-text">Message (text)</p>
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    className="w-100 modal-input"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div className="modal-footer">
+              <button className="close-btn" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" className="close-btn">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </MainLayout>
   );
 }
