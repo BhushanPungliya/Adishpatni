@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Grid } from "@mui/material";
+import emailjs from "@emailjs/browser";
 import product1 from "../assets/photos/product1.jpg";
 import product2 from "../assets/photos/product2.jpg";
 import product3 from "../assets/photos/product3.jpg";
@@ -17,6 +18,11 @@ import home3 from "../assets/home/home3.jpg";
 import home4 from "../assets/home/home4.jpg";
 import Slider from "react-slick";
 import MainLayout from "../components/MainLayout";
+
+// Initialize EmailJS globally
+emailjs.init({
+  publicKey: process.env.REACT_APP_PUBLIC_KEY,
+});
 
 const productList = [
   { name: "Bora Residence", images: product1, hoverImg: "/images/Chugh_Courtyard.jpg" },
@@ -68,6 +74,66 @@ function ProjectCard({ proImg, proText, hoverImg, cls }) {
 function ProjectPage() {
   const pathName = useLocation();
   const [numberOfitemsShown, setNumberOfItemsToShown] = useState(12);
+  const closeRef = useRef(null);
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    email: "",
+    contactNumber: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState({ type: "", text: "" });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!formData.firstName || !formData.email || !formData.message) {
+      setStatusMessage({ type: "error", text: "Please fill in all required fields." });
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const templateParams = {
+        title: "New Inquiry from Website", // Matching {{title}} in Subject
+        from_name: formData.firstName,
+        name: formData.firstName, // Matching {{name}} in Template Body
+        from_email: formData.email,
+        contact_number: formData.contactNumber,
+        message: formData.message,
+        reply_to: formData.email, // Matches {{reply_to}} if used
+      };
+
+      const result = await emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        templateParams
+      );
+
+      if (result.status === 200) {
+        setFormData({
+          firstName: "",
+          email: "",
+          contactNumber: "",
+          message: "",
+        });
+        if (closeRef.current) {
+          closeRef.current.click();
+        }
+        setStatusMessage({ type: "success", text: "Message sent successfully!" });
+      }
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      setStatusMessage({ type: "error", text: "Failed to send message. Please try again later." });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -225,22 +291,40 @@ function ProjectPage() {
               <div className="row">
                 <div className="col-12">
                   <p className="modal-text">First Name</p>
-                  <input type="text" className="w-100 modal-input" />
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    className="w-100 modal-input"
+                  />
                 </div>
                 <div className="col-12 mt-3">
                   <p className="modal-text">Email Address</p>
-                  <input type="text" className="w-100 modal-input" />
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-100 modal-input"
+                  />
                 </div>
                 <div className="col-12 mt-3">
                   <p className="modal-text">Contact Number</p>
-                  <input type="text" className="w-100 modal-input" />
+                  <input
+                    type="text"
+                    name="contactNumber"
+                    value={formData.contactNumber}
+                    onChange={handleChange}
+                    className="w-100 modal-input"
+                  />
                 </div>
                 <div className="col-12 mt-3">
                   <p className="modal-text">Message (text)</p>
                   <textarea
-                    name=""
-                    id=""
-                    cols="30"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-100 modal-input"
                     rows="3"
                   ></textarea>
@@ -248,16 +332,84 @@ function ProjectPage() {
               </div>
             </div>
             <div className="modal-footer">
-              <button className="close-btn" data-bs-dismiss="modal">
+              <button
+                ref={closeRef}
+                className="close-btn"
+                data-bs-dismiss="modal"
+              >
                 Close
               </button>
-              <button type="button" className="close-btn">
-                Send
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="close-btn"
+                disabled={loading}
+              >
+                {loading ? "Sending..." : "Send"}
               </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Custom Status Modal */}
+      {statusMessage.text && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0,0,0,0.8)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 9999,
+          }}
+          onClick={() => setStatusMessage({ type: "", text: "" })}
+        >
+          <div
+            style={{
+              backgroundColor: "#1c1c1c",
+              padding: "40px",
+              borderRadius: "8px",
+              textAlign: "center",
+              maxWidth: "400px",
+              width: "90%",
+              border: "1px solid #333",
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h5
+              style={{
+                color: "#fff",
+                fontSize: "22px",
+                marginBottom: "20px",
+                fontFamily: "'Baskervville', serif",
+              }}
+            >
+              Atelier Adish Patni
+            </h5>
+            <p
+              style={{
+                color: statusMessage.type === "error" ? "#ff4d4d" : "#fff",
+                fontSize: "16px",
+                marginBottom: "30px",
+              }}
+            >
+              {statusMessage.text}
+            </p>
+            <button
+              onClick={() => setStatusMessage({ type: "", text: "" })}
+              className="close-btn"
+              style={{ width: "120px" }}
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
     </MainLayout>
   );
 }
