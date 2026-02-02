@@ -16,7 +16,7 @@ function AwardSlider() {
     slidesToScroll: 1,
   };
 
-  const awardImages = [Award1, Award2, Award3, Award4];
+  const awardImages = [Award3, Award1, Award2, Award4,];
 
   return (
     <>

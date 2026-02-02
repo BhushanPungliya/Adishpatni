@@ -20,7 +20,11 @@ function Footer() {
                     >
                         <img
                             src={Inst}
-                            style={{ height: "26px" }}
+                            style={{
+                                height: "26px",
+
+                                filter: "brightness(0) invert(1)"
+                            }}
                             className="img-fluid"
                             alt=""
                         />

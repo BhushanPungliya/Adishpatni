@@ -7,7 +7,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #141414;
   padding: 25px 0;
 }
 
@@ -66,7 +65,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #141414;
     padding: 25px 0;
   }
 
@@ -76,8 +74,6 @@ header {
   }
 
   .mobile-header {
-    position: fixed;
-    top: 100px;
     left: 0;
     right: 0;
     bottom: 0;

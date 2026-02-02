@@ -187,27 +187,27 @@ function ProjectPage() {
           <div className="mt-4 project-container">
             {pathName.pathname === "/works" ? (
               <div className="gallery-slider mb-5">
-  <Slider {...sliderSettings}>
-    {sliderImages.map((img, index) => (
-      <div key={index} style={{ backgroundColor: "#141414" }}>
-        <img
-          src={img}
-          alt={`gallery-${index}`}
-          className="img-fluid gallery-slider-img"
-          loading="lazy"
-          decoding="async"
-          // --- Yahan changes kiye hain ---
-          style={{ 
-            width: "auto", 
-            margin: "0 auto",
-            height: "70vh",     // Height set ki 90vh
-            objectFit: "cover"  // Image stretch nahi hogi, proper crop hokar fit hogi
-          }}
-        />
-      </div>
-    ))}
-  </Slider>
-</div>
+                <Slider {...sliderSettings}>
+                  {sliderImages.map((img, index) => (
+                    <div key={index} style={{ backgroundColor: "#141414" }}>
+                      <img
+                        src={img}
+                        alt={`gallery-${index}`}
+                        className="img-fluid gallery-slider-img"
+                        loading="lazy"
+                        decoding="async"
+                        // --- Yahan changes kiye hain ---
+                        style={{
+                          width: "auto",
+                          margin: "0 auto",
+                          height: "70vh",     // Height set ki 90vh
+                          objectFit: "cover"  // Image stretch nahi hogi, proper crop hokar fit hogi
+                        }}
+                      />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
             ) : (
               <Grid
                 container
@@ -236,7 +236,7 @@ function ProjectPage() {
               </button>
             )}
 
-            <div className="my-5">
+            <div className="mt-5">
               <button
                 type="button"
                 className="download-btn"
@@ -249,7 +249,7 @@ function ProjectPage() {
           </div>
         </div>
       </section>
-       <div
+      <div
         className="modal fade"
         id="staticBackdrop"
         data-bs-backdrop="static"
@@ -272,7 +272,7 @@ function ProjectPage() {
                 </h5>
                 <h5
                   className="modal-title"
-                  style={{ fontSize: "16px", color: "#FFFFFF" , fontWeight: "500" }}
+                  style={{ fontSize: "16px", color: "#FFFFFF", fontWeight: "500" }}
                   id="staticBackdropLabel"
                 >
                   art | architecture | interior
@@ -280,11 +280,11 @@ function ProjectPage() {
               </div>
               <div>
                 <button
-  type="button"
-  className="btn-close btn-close-white" // Yahan change kiya hai
-  data-bs-dismiss="modal"
-  aria-label="Close"
-></button>
+                  type="button"
+                  className="btn-close btn-close-white" // Yahan change kiya hai
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
             </div>
             <div className="modal-body">
