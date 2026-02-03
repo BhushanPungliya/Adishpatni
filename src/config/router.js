@@ -1,4 +1,6 @@
-import { createHashRouter } from "react-router-dom";
+// Change here: 'createHashRouter' ki jagah 'createBrowserRouter' import karein
+import { createBrowserRouter } from "react-router-dom"; 
+
 import ContactPage from "../pages/ContactPage.jsx";
 import ProjectPage from "../pages/ProjectPage.jsx";
 import ProjectDetail from "../pages/ProjectDetail.jsx";
@@ -7,7 +9,8 @@ import OfficePage from "../pages/OfficePage.jsx";
 import ListPage from "../pages/ListPage.jsx";
 import TermsPage from "../pages/TermsPage.jsx";
 
-const router = createHashRouter([
+// Change here also
+const router = createBrowserRouter([
   {
     path: "/",
     element: <ProjectPage />,

@@ -15,9 +15,6 @@ function ProcessSlider() {
     <>
       <Slider {...settings}>
         <div>
-          <img src="/images/office.jpeg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
-        </div>
-        <div>
           <img src="/images/studio.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
         <div>
@@ -25,6 +22,9 @@ function ProcessSlider() {
         </div>
         <div>
           <img src="/images/studio.jpg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
+        </div>
+        <div>
+          <img src="/images/office.jpeg" style={{objectFit: "cover"}} className="img-fluid about-office" alt="process img" />
         </div>
       </Slider>
     </>

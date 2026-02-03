@@ -168,12 +168,12 @@ function ContactPage() {
                 </h5>
               </div>
               <div>
-                <button
+                {/* <button
                   type="button"
-                  className="btn-close btn-close-white" // Yahan change kiya hai
+                  className="btn-close btn-close-white" 
                   data-bs-dismiss="modal"
                   aria-label="Close"
-                ></button>
+                ></button> */}
               </div>
             </div>
             <div className="modal-body">
