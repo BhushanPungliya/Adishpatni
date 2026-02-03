@@ -185,7 +185,7 @@ function ProjectPage() {
             Gallery
           </Link> */}
           <div className="mt-4 project-container">
-            {pathName.pathname === "/works" ? (
+            {pathName.pathname === "/" || pathName.pathname === "/works" ? (
               <div className="gallery-slider mb-5">
                 <Slider {...sliderSettings}>
                   {sliderImages.map((img, index) => (
