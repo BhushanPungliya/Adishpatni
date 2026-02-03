@@ -14,9 +14,10 @@ function ProjectDetail() {
   }, []);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,

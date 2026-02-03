@@ -14,7 +14,7 @@ function MainLayout({ children, isHome }) {
 
     return (
         <>
-            <MobileHeader open={open} />
+            <MobileHeader open={open} setOpen={setOpen} />
             <section className={isHome ? "hero-section" : "contact-section"}>
                 <div className="header" style={isHome ? { backgroundColor: "transparent", padding: "0" } : {}}>
                     <div className="left-item-hide"></div>

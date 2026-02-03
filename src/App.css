@@ -445,7 +445,9 @@ body {
   padding-bottom: 0px;
   overflow: hidden;
 }
-
+.office--img {
+  width: 100%; height: 500px; object-fit: cover;
+}
 .office-img {
   padding-top: 80px;
   overflow: hidden;
@@ -466,6 +468,7 @@ body {
     padding-top: 20px;
     padding-bottom: 40px;
   }
+  .office--img { height: 300px !important;}
 
   .project-section {
     padding: 20px 0;
@@ -633,13 +636,14 @@ body {
   .about-section {
     /* background-color: #141414; */
     padding: 20px 8px;
+    padding-bottom: 30px;
     /* margin-top: 105px; */
     overflow: hidden;
   }
 
   .about-section .about-office {
     width: 100%;
-    margin: auto;
+    margin: auto; height: auto;
     background-size: cover;
     object-fit: cover;
   }
@@ -1073,7 +1077,7 @@ body {
   letter-spacing: normal;
 }
 
-/* Gallery Slider Dots */
+/* 
 .gallery-slider .slick-dots {
   bottom: 20px;
 }
@@ -1119,4 +1123,62 @@ body {
 .gallery-slider img {
   border: none;
   outline: none;
+} */
+
+/* =========================
+   Arrows Centered Bottom
+   ========================= */
+
+.gallery-slider .slick-prev,
+.gallery-slider .slick-next {
+  z-index: 10;
+  top: unset !important;
+  bottom: -50px;         /* Slider ke niche gap */
+  height: 30px;
+  width: 30px;
+  /* Center positioning logic start */
+  left: 50% !important;  
+  right: unset !important;
+  /* Center positioning logic end */
+}
+
+/* --- NEXT Button (Right side of center) --- */
+.gallery-slider .slick-next {
+  margin-left: 10px; /* Center se thoda right shift */
+}
+
+.gallery-slider .slick-next:before {
+  content: "";
+  background-image: url("./assets/right-arrow.svg");
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  opacity: 1;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  filter: invert(1);
+}
+
+/* --- PREV Button (Left side of center) --- */
+.gallery-slider .slick-prev {
+  margin-left: -40px; /* Center se left shift (Width 30px + Gap 10px) */
+}
+
+.gallery-slider .slick-prev:before {
+  content: "";
+  background-image: url("./assets/right-arrow.svg");
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  opacity: 1;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  filter: invert(1);
 }

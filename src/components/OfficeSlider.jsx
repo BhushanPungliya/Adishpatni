@@ -25,9 +25,8 @@ function OfficeSlider() {
           <div key={index}>
             <img
               src={img}
-              className="img-fluid"
+              className="img-fluid office--img"
               alt={`Office ${index + 1}`}
-              style={{ width: "100%", height: "500px", objectFit: "cover" }}
             />
           </div>
         ))}
