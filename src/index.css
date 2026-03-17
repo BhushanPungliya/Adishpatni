@@ -1,9 +1,4 @@
-body { margin: 0; padding: 0; background-image: url('../public/images/d-bg.png'); background-size: cover; background-repeat: no-repeat;}
-
-
-@media(max-width: 678px) {
-  body {background-image: url('../public/images/bg.jpeg');}
-}
+body { margin: 0; padding: 0; background-color: #141414 !important; }
 @font-face {
     font-family: 'Practice';
     font-style: normal;
